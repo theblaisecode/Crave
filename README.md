@@ -4,7 +4,7 @@ A restaurant website (fully responsive on all screen sizes).
 Live Project - In Progress ⏳ <!-- [https://theblaisecode.github.io/Crave/](https://theblaisecode.github.io/Crave/) -->
 
 # The Website
-![Crave Restaurant Landing](https://github.com/theblaisecode/Crave/assets/89015653/b3474246-6aaf-4895-908c-8e1de5d2b543)
+![crave](https://github.com/theblaisecode/Crave/assets/89015653/1ceb460b-e68e-4bbc-8cec-c63fc39ab92c)
 
 
 ## Tech Stack
@@ -13,6 +13,13 @@ HTML, CSS, JS
 
 
 ## Authors
+
+**Designer**
+- Twitter - [@SadohDennisFr](https://twitter.com/SadohDennisFr)
+
+<br/>
+
+**Developer**
 
 - Github - [@theblaisecode](https://github.com/theblaisecode)
 - Twitter - [@theblaisecode](https://twitter.com/theblaisecode)
