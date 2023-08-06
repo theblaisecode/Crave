@@ -1,7 +1,7 @@
 # Crave Restaurant Website
 A restaurant website (fully responsive on all screen sizes).
 
-Live Project - In Progress ⏳ <!-- [https://theblaisecode.github.io/Crave/](https://theblaisecode.github.io/Crave/) -->
+Live Project - [https://theblaisecode.github.io/Crave/](https://theblaisecode.github.io/Crave/)
 
 # The Website
 ![crave](https://github.com/theblaisecode/Crave/assets/89015653/1ceb460b-e68e-4bbc-8cec-c63fc39ab92c)
@@ -9,7 +9,7 @@ Live Project - In Progress ⏳ <!-- [https://theblaisecode.github.io/Crave/](htt
 
 ## Tech Stack
 
-HTML, CSS, JS
+HTML, CSS, JS, SwiperJS
 
 
 ## Authors
