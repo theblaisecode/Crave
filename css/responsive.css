@@ -1,0 +1,2067 @@
+/* ---------------------------------- Responsive Media Queries---------------------------------- */
+
+/******************************************
+/* Smartphone
+/*******************************************/
+@media screen and (max-width: 993px) {
+   .mobile-menu-icon {
+      display: block;
+   }
+
+   body {
+      overflow-x: hidden;
+   }
+
+   .headerContent {
+      width: 100%;
+   }
+
+   .navbar {
+      position: absolute;
+      top: 0;
+      right: -100%;
+      z-index: 4;
+      width: 25rem;
+      height: 120vh;
+      background: var(--secondaryColor);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 10rem 2rem;
+      transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+      overflow: auto;
+   }
+
+   .navbar li {
+      padding: 1.5rem 1.8rem;
+      display: block;
+      width: 100%;
+      text-align: left;
+   }
+
+   .open-menu {
+      right: 0;
+      transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+
+   .mobileProfile {
+      display: block;
+   }
+
+   .userProfile img {
+      padding-left: 0.5rem;
+      flex: 0;
+   }
+
+   .pc.userProfile {
+      display: none;
+   }
+}
+
+/* ---------------------- Mobile Screen ---------------------- */
+@media screen and (max-width: 575px) and (min-height: 575px) {
+   .container {
+      width: 96%;
+   }
+
+   .container2 {
+      width: 93%;
+   }
+
+   p {
+      font-size: calc(0.8rem + 2vw);
+   }
+
+   #hero {
+      margin: 10rem 0 3rem 0;
+      padding: 3rem 0 0 0;
+   }
+
+   .heroContent .flex {
+      flex-direction: column;
+   }
+
+   .heroContent .contentTop {
+      flex: 1;
+      padding-left: 0;
+   }
+
+   .heroContent .head {
+      font-size: calc(9rem + 3vw);
+      margin: 1rem 0;
+   }
+
+   .heroContent .accent {
+      font-size: calc(1.5rem + 3vw);
+   }
+
+   .heroContent .accent span {
+      font-size: calc(0.8rem + 3vw);
+   }
+
+   .heroContent .description {
+      width: 95%;
+   }
+
+   /* Buttons */
+   .heroButton {
+      margin-top: 5rem;
+      display: flex;
+   }
+
+   .btn {
+      font-size: calc(1rem + 1.5vw);
+      padding: 1.3rem 2.5rem;
+      letter-spacing: 0.8px;
+   }
+
+   .mealTime p {
+      font-size: calc(1.2rem + 2vw);
+   }
+   .mealTime span {
+      font-size: calc(1rem + 2vw);
+   }
+
+   .heroContent .swiper-slide img {
+      margin-top: 5rem;
+      padding-bottom: 4rem;
+   }
+
+   /* ---------------------- Swiper pagination ---------------------- */
+   /* ---------------------- Change Swiper pagination to left ---------------------- */
+   .heroContent .swiper-horizontal > .swiper-pagination-bullets,
+   .heroContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .heroContent .swiper-pagination-custom,
+   .heroContent .swiper-pagination-fraction {
+      bottom: var(--swiper-pagination-bottom, 2px);
+      top: var(--swiper-pagination-top, auto);
+      left: 0;
+      transform: rotate(0);
+   }
+
+   /* pagination color */
+   .heroContent .swiper-pagination-bullet {
+      width: 1.1rem !important;
+      height: 1.1rem !important;
+   }
+
+   /* Space between pagination */
+   .heroContent
+      .swiper-horizontal
+      > .swiper-pagination-bullets
+      .swiper-pagination-bullet,
+   .heroContent
+      .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 5px);
+   }
+
+   /* ---------------------- Section: Popular Styling ---------------------- */
+   /* Small top text */
+   .popularContent .contentTop span,
+   .amazingContent .contentTop span,
+   .appContent .contentBottom span,
+   .testimonialContent .contentTop span,
+   .subscribeContent .box .heading span {
+      font-size: calc(1rem + 2vw);
+   }
+
+   /* Heading text */
+   .popularContent .contentTop h2,
+   .amazingContent .contentTop h2,
+   .appContent .contentBottom h2,
+   .testimonialContent .contentTop h2 {
+      font-size: calc(2.5rem + 2vw);
+      line-height: 4.5rem;
+   }
+
+   .popularContent .card img:hover,
+   .popularContent .card:hover img,
+   .amazingContent .grid-item:hover,
+   .amazingContent .grid-item span a:hover {
+      transform: scale(1.05);
+   }
+
+   .popularContent .contentBottom {
+      flex-direction: column;
+      gap: 5rem;
+   }
+
+   .cardDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+   }
+
+   .foodName {
+      font-size: calc(1.5rem + 2vw);
+   }
+
+   .cardBtn {
+      padding: 1.4rem 1rem;
+   }
+
+   .cardBtn > * {
+      font-size: calc(0.6rem + 2vw);
+   }
+
+   /* ---------------------- Section: Selection Styling ---------------------- */
+   .selectionContent {
+      flex-direction: column;
+   }
+
+   /* Selection Menu and Buttons */
+   .selectionContent .contentTop {
+      flex: 1;
+      padding-left: 0;
+      overflow-y: hidden;
+      overflow-x: auto;
+   }
+
+   /* Button text */
+   .selectionContent .contentTop ul {
+      flex-direction: row;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+   }
+
+   .selectionContent .contentTop li div.btn {
+      padding: 1.2rem 3rem 1.2rem 1.2rem;
+      width: 17rem;
+      gap: 1.3rem;
+   }
+
+   .selectionContent .contentTop div.btn {
+      font-size: calc(0.9rem + 1vw);
+   }
+
+   .selectionContent .contentTop li div.btn img {
+      padding: 0.4rem;
+      width: 3.5rem;
+   }
+
+   /* Menu Scrollbar */
+   .selectionContent .contentTop::-webkit-scrollbar {
+      width: 0;
+      height: 0.6rem;
+   }
+
+   /* Menu Banner */
+   .selectionContent .contentBottom {
+      width: 100%;
+   }
+
+   /* Slide background */
+   .selectionSwiper {
+      padding: 3rem 2rem 6rem 2rem;
+   }
+
+   /* Slide content */
+   .selectionSwiper .swiper-slide {
+      font-size: 8px;
+      padding: 0;
+      margin-right: 0;
+   }
+
+   /* Text and Button Content */
+   .selectionBox {
+      display: flex;
+   }
+
+   .selectionContent {
+      gap: 4rem;
+   }
+
+   .selectionContent .contentBottom .leaf {
+      top: -2%;
+      width: 5rem;
+   }
+
+   .selectionText {
+      gap: 2rem;
+   }
+
+   .selectionText .caption {
+      font-size: calc(0.7rem + 2vw);
+      gap: 2rem;
+      width: 100%;
+      padding: 0.8rem;
+   }
+
+   .selectionText h2 {
+      font-size: calc(3rem + 2.5vw);
+      line-height: 5rem;
+      margin-bottom: 1.5rem;
+   }
+
+   .selectionText .text {
+      width: 97%;
+      font-size: calc(0.9rem + 2vw);
+      line-height: 2.5rem;
+      color: var(--textColor);
+   }
+
+   /* Button */
+   .selectionText a.btn {
+      padding: 1.2rem 4rem 1.2rem 2rem;
+      font-size: calc(1rem + 1vw);
+   }
+
+   .selectionText span:hover {
+      transform: translateY(-0.5rem);
+   }
+
+   /* Banner Iamge */
+   .image {
+      width: 55%;
+      bottom: -20%;
+      right: -2%;
+   }
+
+   .image img {
+      width: 97%;
+   }
+
+   /* ---------------------- Section: Amazing Styling ---------------------- */
+   #amazing {
+      padding: 5rem 0;
+   }
+
+   /* Heading */
+   .amazingContent .contentTop {
+      width: 100%;
+   }
+
+   /* Meal Cards */
+   .grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0.5rem;
+   }
+
+   .grid-item {
+      padding: 2rem 2.5rem;
+   }
+
+   /* See all menu Button */
+   .amazingbtn {
+      margin-top: 5rem;
+   }
+
+   .amazingbtn a {
+      padding: 1.3rem 3rem;
+   }
+
+   /* ---------------------- Section: mobile Styling ---------------------- */
+   .appContent {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   /* Mobile app */
+   .appContent .contentTop {
+      width: 70%;
+   }
+
+   .appContent .contentTop img {
+      width: 100%;
+   }
+
+   /* Text content */
+   .appContent .contentBottom {
+      flex: 1;
+      padding: 0 8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+   }
+
+   /* ---------------------- Section: Testimonial Styling ---------------------- */
+   #testimonial {
+      padding: 5rem 0;
+   }
+
+   .testimonialContent .contentBottom .card {
+      margin: auto;
+      width: 90%;
+      padding: 4rem 2rem 6rem 2rem;
+   }
+
+   /* Slide image and text content */
+   .testimonialContent .testimonialBox {
+      flex-direction: column;
+      gap: 2rem;
+   }
+
+   .testimonialContent .testimonialBox .contentTop img {
+      width: 70%;
+   }
+
+   /* Divider */
+   .line {
+      width: 20rem;
+      height: 0.3rem;
+   }
+
+   /* Text content */
+   .testimonialContent .testimonialBox .contentBottom {
+      margin: 0;
+      padding: 0 1rem 5rem 1rem;
+      gap: 2rem;
+   }
+
+   /* Quote heading */
+   .testimonialContent .testimonialBox .contentBottom .lead i {
+      font-size: 3.5rem;
+   }
+
+   .testimonialContent .testimonialBox .contentBottom .lead h3 {
+      font-size: calc(1.3rem + 1.5vw);
+   }
+
+   /* Pagination Prev button */
+   .testimonialBox .swiper-button-next,
+   .swiper-button-prev {
+      top: var(--swiper-navigation-top-offset, 99.5%);
+      left: var(--swiper-navigation-left-offset, 33%);
+   }
+
+   /* Pagination Next button */
+   .testimonialBox .swiper-button-next,
+   .swiper-button-next {
+      top: var(--swiper-navigation-top-offset, 99.5%);
+      right: var(--swiper-navigation-right-offset, -2%);
+   }
+
+   /* ---------------------- Change Swiper pagination counter position ---------------------- */
+   .testimonialContent .swiper-horizontal > .swiper-pagination-bullets,
+   .testimonialContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .testimonialContent .swiper-pagination-custom,
+   .testimonialContent .swiper-pagination-fraction {
+      bottom: var(--swiper-pagination-bottom, -1%);
+      left: var(--swiper-pagination-left, 25.5%);
+      font-size: 1.5rem;
+   }
+
+   /* Make current slide number bigger */
+   .testimonialContent .swiper-pagination-fraction .swiper-pagination-current {
+      font-size: 3rem !important;
+   }
+
+   /* ---------------------- Subscribr Styling ---------------------- */
+   #subscribe {
+      width: 90%;
+   }
+
+   /* Background */
+   .subscribeContent .box {
+      padding: 2rem;
+      border-radius: 1.5rem;
+      gap: 2rem;
+      top: -2%;
+   }
+
+   /* Divider */
+   .subscribeContent .box .heading img {
+      padding-left: 10rem;
+   }
+
+   .subscribeContent .box p {
+      font-size: calc(0.7rem + 2vw);
+      padding: 0;
+   }
+
+   /* Subscribe Form */
+   .subscribeContent input[type="email"] {
+      padding: 1.5rem 4rem;
+      border-radius: 2.5rem;
+      width: 100%;
+   }
+
+   .subscribeContent input[type="submit"] {
+      right: 1%;
+   }
+
+   /* ---------------------- Footer Styling ---------------------- */
+   #mainFooter {
+      margin-top: 10rem;
+      padding: 16rem 0.5rem 0.5rem 0.5rem;
+   }
+
+   .footerContent,
+   .footerContent .contentBottom {
+      flex-direction: column;
+   }
+
+   /* Other links */
+   .footerContent .contentBottom {
+      margin-top: 5rem;
+      gap: 5rem;
+   }
+
+   .footerContent .contentBottom > *,
+   .footerContent .contentBottom > * ul {
+      display: flex;
+   }
+
+   /* ---------------------- Footer Styling ---------------------- */
+   .subFooterContent {
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0.5rem;
+      /* font-size: 1rem; */
+      font-size: 1.5rem;
+   }
+
+   /* Divider between designer and developer */
+   .subFooterContent .divide {
+      width: 0.2rem;
+      height: 4rem;
+      background: var(--secondaryColor);
+   }
+
+   .subFooterContent .authors {
+      font-size: calc(0.9rem + 1vw);
+      gap: 0.8rem;
+   }
+
+   .subFooterContent .authors a {
+      color: var(--secondaryColor);
+      text-decoration: underline;
+   }
+}
+
+/******************************************
+/* Tablet
+/*******************************************/
+@media (min-width: 576px) and (max-width: 768px) {
+   .container {
+      width: 96%;
+   }
+
+   .container2 {
+      width: 93%;
+   }
+
+   p {
+      font-size: calc(0.8rem + 1.5vw);
+   }
+
+   #hero {
+      margin: 10rem 0 3rem 0;
+      padding: 3rem 0 0 0;
+   }
+
+   .heroContent .flex {
+      flex-direction: column;
+   }
+
+   .heroContent .contentTop {
+      flex: 1;
+      padding-left: 0;
+   }
+
+   .heroContent .head {
+      font-size: calc(13rem + 3vw);
+      margin: 1rem 0;
+   }
+
+   .heroContent .accent {
+      font-size: calc(1.5rem + 3vw);
+   }
+
+   .heroContent .accent span {
+      font-size: calc(0.8rem + 3vw);
+   }
+
+   .heroContent .description {
+      width: 95%;
+   }
+
+   /* Buttons */
+   .heroButton {
+      margin-top: 5rem;
+      display: flex;
+   }
+
+   .mealTime p {
+      font-size: calc(1.2rem + 2vw);
+   }
+   .mealTime span {
+      font-size: calc(1rem + 2vw);
+   }
+
+   .heroContent .swiper-slide img {
+      margin-top: 5rem;
+      padding-bottom: 4rem;
+   }
+   /* ---------------------- Swiper pagination ---------------------- */
+   /* ---------------------- Change Swiper pagination to left ---------------------- */
+   .heroContent .swiper-horizontal > .swiper-pagination-bullets,
+   .heroContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .heroContent .swiper-pagination-custom,
+   .heroContent .swiper-pagination-fraction {
+      bottom: var(--swiper-pagination-bottom, 2px);
+      top: var(--swiper-pagination-top, auto);
+      left: 0;
+      transform: rotate(0);
+   }
+
+   /* pagination color */
+   .heroContent .swiper-pagination-bullet {
+      width: 1.7rem !important;
+      height: 1.7rem !important;
+   }
+
+   /* Space between pagination */
+   .heroContent
+      .swiper-horizontal
+      > .swiper-pagination-bullets
+      .swiper-pagination-bullet,
+   .heroContent
+      .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px);
+   }
+
+   /* ---------------------- Section: Popular Styling ---------------------- */
+   /* Small top text */
+   .popularContent .contentTop span,
+   .amazingContent .contentTop span,
+   .appContent .contentBottom span,
+   .testimonialContent .contentTop span,
+   .subscribeContent .box .heading span {
+      font-size: calc(1rem + 2vw);
+   }
+
+   /* Heading text */
+   .popularContent .contentTop h2,
+   .amazingContent .contentTop h2,
+   .appContent .contentBottom h2,
+   .testimonialContent .contentTop h2 {
+      font-size: calc(3.5rem + 2vw);
+      line-height: 4.5rem;
+   }
+
+   .popularContent .card img:hover,
+   .popularContent .card:hover img,
+   .amazingContent .grid-item:hover,
+   .amazingContent .grid-item span a:hover {
+      transform: scale(1.05);
+   }
+
+   .popularContent .contentBottom {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
+   }
+
+   .cardDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+   }
+
+   .foodName {
+      font-size: calc(1.5rem + 2vw);
+   }
+
+   .cardBtn {
+      padding: 1.4rem 0.9rem;
+   }
+
+   .cardBtn > * {
+      font-size: calc(0.5rem + 2vw);
+   }
+
+   /* ---------------------- Section: Selection Styling ---------------------- */
+   .selectionContent {
+      flex-direction: column;
+   }
+
+   /* Selection Menu and Buttons */
+   .selectionContent .contentTop {
+      flex: 1;
+      padding-left: 0;
+      overflow-y: hidden;
+      overflow-x: auto;
+   }
+
+   /* Button text */
+   .selectionContent .contentTop ul {
+      flex-direction: row;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+   }
+
+   .selectionContent .contentTop li div.btn {
+      padding: 1.2rem 3rem 1.2rem 1.2rem;
+      width: 17.5rem;
+      gap: 1.3rem;
+   }
+
+   .selectionContent .contentTop div.btn {
+      font-size: calc(0.9rem + 1vw);
+   }
+
+   .selectionContent .contentTop li div.btn img {
+      padding: 0.4rem;
+      width: 3.5rem;
+   }
+
+   /* Menu Scrollbar */
+   .selectionContent .contentTop::-webkit-scrollbar {
+      width: 0;
+      height: 0.6rem;
+   }
+
+   /* Menu Banner */
+   .selectionContent .contentBottom {
+      width: 100%;
+   }
+
+   /* Slide background */
+   .selectionSwiper {
+      padding: 4rem 3rem 6rem 3rem;
+   }
+
+   /* Slide content */
+   .selectionSwiper .swiper-slide {
+      font-size: 8px;
+      padding: 0;
+      margin-right: 0;
+   }
+
+   /* Text and Button Content */
+   .selectionBox {
+      display: flex;
+   }
+
+   .selectionContent {
+      gap: 4rem;
+   }
+
+   .selectionContent .contentBottom .leaf {
+      top: -2%;
+      width: 5rem;
+   }
+
+   .selectionText {
+      gap: 3rem;
+   }
+
+   .selectionText .caption {
+      font-size: calc(0.7rem + 2vw);
+      gap: 2rem;
+      width: 100%;
+      padding: 0.8rem;
+   }
+
+   .selectionText h2 {
+      font-size: calc(3rem + 2.5vw);
+      line-height: 5rem;
+      margin-bottom: 1.5rem;
+   }
+
+   .selectionText .text {
+      width: 97%;
+      font-size: calc(0.9rem + 2vw);
+      line-height: 2.5rem;
+      color: var(--textColor);
+   }
+
+   /* Button */
+   .selectionText a.btn {
+      padding: 1.2rem 4rem 1.2rem 2rem;
+      font-size: calc(1rem + 1vw);
+   }
+
+   .selectionText span:hover {
+      transform: translateY(-0.5rem);
+   }
+
+   /* Banner Iamge */
+   .image {
+      width: 47%;
+      bottom: -25%;
+      right: -5%;
+   }
+
+   .image img {
+      width: 97%;
+   }
+
+   /* ---------------------- Section: Amazing Styling ---------------------- */
+   #amazing {
+      padding: 5rem 0;
+   }
+
+   /* Heading */
+   .amazingContent .contentTop {
+      width: 100%;
+   }
+
+   /* Meal Cards */
+   .grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+   }
+
+   .grid-item {
+      padding: 2rem;
+   }
+
+   /* See all menu Button */
+   .amazingbtn {
+      margin-top: 5rem;
+   }
+
+   .amazingbtn a {
+      padding: 1.3rem 3rem;
+   }
+
+   /* ---------------------- Section: mobile Styling ---------------------- */
+   .appContent {
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   /* Mobile app */
+   .appContent .contentTop {
+      flex: 1;
+      width: 60%;
+   }
+
+   .appContent .contentTop img {
+      width: 100%;
+   }
+
+   /* Text content */
+   .appContent .contentBottom {
+      flex: 1;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 50%;
+   }
+
+   /* Buttons */
+   .appContent .contentBottom .appBtn {
+      margin-top: 0;
+   }
+
+   .appContent .contentBottom .appBtn .btn {
+      padding: 1rem;
+   }
+
+   .appContent .contentBottom .appBtn,
+   .appContent .contentBottom .appBtn a {
+      display: flex;
+      width: 100%;
+      gap: 2rem;
+      align-items: center;
+   }
+
+   .appContent .contentBottom .appBtn a {
+      background: var(--textColor);
+   }
+
+   /* Image within the buttons */
+   .appContent .contentBottom .appBtn a img {
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+   }
+
+   /* ---------------------- Section: Testimonial Styling ---------------------- */
+   #testimonial {
+      padding: 5rem 0;
+   }
+
+   .testimonialContent .contentBottom .card {
+      margin: auto;
+      width: 90%;
+      padding: 4rem 2rem 6rem 2rem;
+   }
+
+   /* Slide image and text content */
+   .testimonialContent .testimonialBox {
+      flex-direction: column;
+      gap: 2rem;
+   }
+
+   .testimonialContent .testimonialBox .contentTop img {
+      width: 70%;
+   }
+
+   /* Divider */
+   .line {
+      width: 20rem;
+      height: 0.3rem;
+   }
+
+   /* Text content */
+   .testimonialContent .testimonialBox .contentBottom {
+      margin: 0;
+      padding: 0 1rem 5rem 1rem;
+      gap: 2rem;
+   }
+
+   /* Quote heading */
+   .testimonialContent .testimonialBox .contentBottom .lead i {
+      font-size: 3.5rem;
+   }
+
+   .testimonialContent .testimonialBox .contentBottom .lead h3 {
+      font-size: calc(1.3rem + 1.5vw);
+   }
+
+   /* Pagination Prev button */
+   .testimonialBox .swiper-button-next,
+   .swiper-button-prev {
+      top: var(--swiper-navigation-top-offset, 99.5%);
+      left: var(--swiper-navigation-left-offset, 33%);
+   }
+
+   /* Pagination Next button */
+   .testimonialBox .swiper-button-next,
+   .swiper-button-next {
+      top: var(--swiper-navigation-top-offset, 99.5%);
+      right: var(--swiper-navigation-right-offset, -2%);
+   }
+
+   /* ---------------------- Change Swiper pagination counter position ---------------------- */
+   .testimonialContent .swiper-horizontal > .swiper-pagination-bullets,
+   .testimonialContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .testimonialContent .swiper-pagination-custom,
+   .testimonialContent .swiper-pagination-fraction {
+      bottom: var(--swiper-pagination-bottom, -1%);
+      left: var(--swiper-pagination-left, 25.5%);
+      font-size: 1.5rem;
+   }
+
+   /* Make current slide number bigger */
+   .testimonialContent .swiper-pagination-fraction .swiper-pagination-current {
+      font-size: 3rem !important;
+   }
+
+   /* ---------------------- Subscribr Styling ---------------------- */
+   #subscribe {
+      width: 90%;
+   }
+
+   /* Background */
+   .subscribeContent .box {
+      padding: 2rem;
+      border-radius: 1.5rem;
+      gap: 2rem;
+      top: -2%;
+   }
+
+   /* Divider */
+   .subscribeContent .box .heading img {
+      padding-left: 10rem;
+   }
+
+   .subscribeContent .box p {
+      font-size: calc(0.7rem + 2vw);
+      padding: 0;
+   }
+
+   /* Subscribe Form */
+   .subscribeContent input[type="email"] {
+      padding: 1.5rem 4rem;
+      border-radius: 2.5rem;
+      width: 100%;
+   }
+
+   .subscribeContent input[type="submit"] {
+      right: 1%;
+   }
+
+   /* ---------------------- Footer Styling ---------------------- */
+   #mainFooter {
+      margin-top: 10rem;
+      padding: 16rem 0.5rem 0.5rem 0.5rem;
+   }
+
+   .footerContent,
+   .footerContent .contentBottom {
+      flex-direction: column;
+   }
+
+   /* Other links */
+   .footerContent .contentBottom {
+      align-items: flex-start;
+      margin-top: 5rem;
+      gap: 5rem;
+   }
+
+   .footerContent .contentBottom > *,
+   .footerContent .contentBottom > * ul {
+      display: flex;
+   }
+
+   /* ---------------------- Footer Styling ---------------------- */
+   .subFooterContent {
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0.5rem;
+      /* font-size: 1rem; */
+      font-size: 1.5rem;
+   }
+
+   /* Divider between designer and developer */
+   .subFooterContent .divide {
+      width: 0.2rem;
+      height: 4rem;
+      background: var(--secondaryColor);
+   }
+
+   .subFooterContent .authors {
+      font-size: calc(0.9rem + 1vw);
+      gap: 0.8rem;
+   }
+
+   .subFooterContent .authors a {
+      color: var(--secondaryColor);
+      text-decoration: underline;
+   }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+   .container {
+      width: 96%;
+   }
+
+   .container2 {
+      width: 93%;
+   }
+
+   p {
+      font-size: calc(0.3rem + 1.5vw);
+   }
+
+   #hero {
+      padding: 3rem 0 0 0;
+      margin: 10rem 0 3rem 0;
+   }
+
+   .heroContent .contentTop {
+      padding-left: 0;
+   }
+
+   .heroContent .head {
+      font-size: calc(12rem + 3vw);
+      margin: 1rem 0;
+   }
+
+   .heroContent .accent {
+      font-size: calc(1rem + 3vw);
+   }
+
+   .heroContent .accent span {
+      font-size: calc(0.6rem + 2vw);
+   }
+
+   .heroContent .description {
+      width: 90%;
+   }
+
+   /* Buttons */
+   .heroButton {
+      margin-top: 4rem;
+      display: flex;
+   }
+
+   .mealTime p {
+      font-size: calc(0.2rem + 2vw);
+   }
+   .mealTime span {
+      font-size: calc(0.1rem + 2vw);
+   }
+
+   .heroContent .swiper-slide img {
+      margin-top: 5rem;
+      padding-bottom: 4rem;
+   }
+   /* ---------------------- Swiper pagination ---------------------- */
+   /* ---------------------- Change Swiper pagination to left ---------------------- */
+   .heroContent .swiper-horizontal > .swiper-pagination-bullets,
+   .heroContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .heroContent .swiper-pagination-custom,
+   .heroContent .swiper-pagination-fraction {
+      bottom: var(--swiper-pagination-bottom, -0.65rem);
+      top: var(--swiper-pagination-top, auto);
+      left: 0;
+      transform: rotate(0);
+   }
+
+   /* pagination color */
+   .heroContent .swiper-pagination-bullet {
+      width: 1.7rem !important;
+      height: 1.7rem !important;
+   }
+
+   /* Space between pagination */
+   .heroContent
+      .swiper-horizontal
+      > .swiper-pagination-bullets
+      .swiper-pagination-bullet,
+   .heroContent
+      .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px);
+   }
+
+   /* ---------------------- Section: Popular Styling ---------------------- */
+   .popularContent .contentTop {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   /* Small top text */
+   .popularContent .contentTop span,
+   .amazingContent .contentTop span,
+   .appContent .contentBottom span,
+   .testimonialContent .contentTop span,
+   .subscribeContent .box .heading span {
+      font-size: (0.5rem + 2vw);
+   }
+
+   /* Heading text */
+   .popularContent .contentTop h2,
+   .amazingContent .contentTop h2,
+   .appContent .contentBottom h2,
+   .testimonialContent .contentTop h2 {
+      font-size: calc(2rem + 2vw);
+      line-height: 4.5rem;
+   }
+
+   .popularContent .card img:hover,
+   .popularContent .card:hover img,
+   .amazingContent .grid-item:hover,
+   .amazingContent .grid-item span a:hover {
+      transform: scale(1.02);
+   }
+
+   /* Divider */
+   .popularContent .contentTop img {
+      width: 15rem;
+      margin-left: 4rem;
+   }
+
+   .popularContent .contentBottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   /* Meals */
+   .popularContent .card {
+      text-align: center;
+      transition: 0.4s;
+   }
+
+   .popularContent .card img,
+   .amazingContent .grid-item,
+   .amazingContent .grid-item span a {
+      transition: 0.4s;
+   }
+
+   /* Heading text */
+   .popularContent .contentTop h2,
+   .amazingContent .contentTop h2,
+   .appContent .contentBottom h2,
+   .testimonialContent .contentTop h2 {
+      font-size: calc(3.5rem + 2vw);
+      line-height: 4.5rem;
+   }
+
+   .popularContent .contentBottom {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
+   }
+
+   .cardDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+   }
+
+   .foodName {
+      font-size: calc(1rem + 2vw);
+   }
+
+   .cardBtn {
+      padding: 1.4rem 0;
+      margin: auto;
+      width: 80%;
+   }
+
+   .cardBtn > * {
+      font-size: calc(0.4rem + 2vw);
+   }
+
+   /* ---------------------- Section: Selection Styling ---------------------- */
+   .selectionContent {
+      flex-direction: column;
+   }
+
+   /* Selection Menu and Buttons */
+   .selectionContent .contentTop {
+      flex: 1;
+      padding-left: 0;
+      overflow-y: hidden;
+      overflow-x: auto;
+   }
+
+   /* Button text */
+   .selectionContent .contentTop ul {
+      flex-direction: row;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+   }
+
+   .selectionContent .contentTop li div.btn {
+      padding: 1.2rem 3rem 1.2rem 1.2rem;
+      width: 20rem;
+      gap: 1.3rem;
+   }
+
+   .selectionContent .contentTop div.btn {
+      font-size: calc(0.9rem + 1vw);
+   }
+
+   .selectionContent .contentTop li div.btn img {
+      padding: 0.4rem;
+      width: 3.5rem;
+   }
+
+   /* Menu Scrollbar */
+   .selectionContent .contentTop::-webkit-scrollbar {
+      width: 0;
+      height: 0.6rem;
+   }
+
+   /* Menu Banner */
+   .selectionContent .contentBottom {
+      width: 100%;
+   }
+
+   /* Slide background */
+   .selectionSwiper {
+      padding: 4rem 3rem 6rem 3rem;
+   }
+
+   /* Slide content */
+   .selectionSwiper .swiper-slide {
+      font-size: 8px;
+      padding: 0;
+      margin-right: 0;
+   }
+
+   /* Text and Button Content */
+   .selectionBox {
+      display: flex;
+   }
+
+   .selectionContent {
+      gap: 4rem;
+   }
+
+   .selectionContent .contentBottom .leaf {
+      top: -2%;
+      width: 5rem;
+   }
+
+   .selectionText {
+      gap: 4rem;
+      /* padding-right: 15rem; */
+   }
+
+   .selectionText .caption {
+      font-size: calc(0.7rem + 2vw);
+      gap: 2rem;
+      width: 70%;
+      padding: 0.8rem;
+   }
+
+   .selectionText h2 {
+      font-size: calc(3rem + 2.5vw);
+      line-height: 5rem;
+      margin-bottom: 2rem;
+   }
+
+   .selectionText .text {
+      width: 97%;
+      font-size: calc(0.9rem + 2vw);
+      line-height: 4rem;
+      color: var(--textColor);
+   }
+
+   /* Button */
+   .selectionText a.btn {
+      padding: 1.2rem 4rem 1.2rem 2rem;
+      font-size: calc(1rem + 1vw);
+   }
+
+   .selectionText span:hover {
+      transform: translateY(-0.5rem);
+   }
+
+   /* Banner Iamge */
+   .image {
+      width: 40%;
+      bottom: -25%;
+      right: -5%;
+   }
+
+   .image img {
+      width: 97%;
+   }
+
+   /* ---------------------- Section: Amazing Styling ---------------------- */
+   #amazing {
+      padding: 5rem 0;
+   }
+
+   #amazing .container {
+      width: 100%;
+   }
+
+   /* Heading */
+   .amazingContent .contentTop {
+      width: 80%;
+   }
+
+   /* Meal Cards */
+   .grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+   }
+
+   .grid-item {
+      padding: 2rem;
+   }
+
+   /* See all menu Button */
+   .amazingbtn {
+      margin-top: 5rem;
+   }
+
+   .amazingbtn a {
+      padding: 1.6rem 3rem;
+   }
+
+   /* ---------------------- Section: mobile Styling ---------------------- */
+   .appContent {
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   /* Mobile app */
+   .appContent .contentTop {
+      flex: 1;
+      width: 60%;
+   }
+
+   .appContent .contentTop img {
+      width: 100%;
+   }
+
+   /* Text content */
+   .appContent .contentBottom {
+      flex: 1;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 50%;
+   }
+
+   /* Buttons */
+   .appContent .contentBottom .appBtn {
+      margin-top: 0;
+   }
+
+   .appContent .contentBottom .appBtn .btn {
+      padding: 1rem;
+   }
+
+   .appContent .contentBottom .appBtn,
+   .appContent .contentBottom .appBtn a {
+      display: flex;
+      width: 100%;
+      gap: 2rem;
+      align-items: center;
+   }
+
+   .appContent .contentBottom .appBtn a {
+      background: var(--textColor);
+   }
+
+   /* Image within the buttons */
+   .appContent .contentBottom .appBtn a img {
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+   }
+
+   /* ---------------------- Section: Testimonial Styling ---------------------- */
+   #testimonial {
+      padding: 5rem 0;
+   }
+
+   .testimonialContent .contentBottom .card {
+      margin: auto;
+      width: 100%;
+      padding: 4rem 2rem 6rem 2rem;
+   }
+
+   /* Slide image and text content */
+   .testimonialContent .testimonialBox {
+      gap: 1rem;
+   }
+
+   .testimonialContent .testimonialBox .contentTop img {
+      width: 70%;
+   }
+
+   /* Text content */
+   .testimonialContent .testimonialBox .contentBottom {
+      margin: 0;
+      padding: 0 1rem 5rem 1rem;
+      gap: 2rem;
+   }
+
+   /* Quote heading */
+   .testimonialContent .testimonialBox .contentBottom .lead i {
+      font-size: 3.5rem;
+   }
+
+   .testimonialContent .testimonialBox .contentBottom .lead h3 {
+      font-size: calc(1.3rem + 1.5vw);
+   }
+
+   /* Pagination Prev button */
+   .testimonialBox .swiper-button-next,
+   .swiper-button-prev {
+      top: var(--swiper-navigation-top-offset, 98%);
+      left: var(--swiper-navigation-left-offset, 64%);
+   }
+
+   /* Pagination Next button */
+   .testimonialBox .swiper-button-next,
+   .swiper-button-next {
+      top: var(--swiper-navigation-top-offset, 98%);
+      right: var(--swiper-navigation-right-offset, 2%);
+   }
+
+   /* ---------------------- Change Swiper pagination counter position ---------------------- */
+   .testimonialContent .swiper-horizontal > .swiper-pagination-bullets,
+   .testimonialContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .testimonialContent .swiper-pagination-custom,
+   .testimonialContent .swiper-pagination-fraction {
+      bottom: var(--swiper-pagination-bottom, -5%);
+      left: var(--swiper-pagination-left, 34.9%);
+   }
+
+   /* ---------------------- Subscribr Styling ---------------------- */
+   #subscribe {
+      width: 80%;
+   }
+
+   /* Background */
+   .subscribeContent .box {
+      padding: 2rem;
+      border-radius: 1.5rem;
+      gap: 2rem;
+      top: -2%;
+   }
+
+   /* Divider */
+   .subscribeContent .box .heading img {
+      padding-left: 10rem;
+   }
+
+   .subscribeContent .box p {
+      font-size: calc(0.7rem + 1vw);
+      padding: 0 9rem;
+   }
+
+   /* Subscribe Form */
+   .subscribeContent input[type="email"] {
+      padding: 1.5rem 4rem;
+      border-radius: 2.5rem;
+      width: 100%;
+   }
+
+   .subscribeContent input[type="submit"] {
+      right: 1%;
+   }
+
+   /* ---------------------- Footer Styling ---------------------- */
+   #mainFooter {
+      margin-top: 5rem;
+      padding: 16rem 0.5rem 0.5rem 0.5rem;
+      align-items: center;
+      padding-bottom: 2rem;
+   }
+
+   /* Logo and social */
+   .footerContent .contentTop {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+   }
+
+   /* Other links */
+   .footerContent .contentBottom {
+      flex: 2.5;
+      align-items: center;
+      margin-top: 5rem;
+      gap: 2rem;
+   }
+
+   .footerContent .contentBottom > *,
+   .footerContent .contentBottom > * ul {
+      display: flex;
+   }
+
+   .footerContent .contentBottom .contact {
+      flex: 2;
+   }
+   .footerContent .contentBottom .support {
+      flex: 1.5;
+   }
+
+   .footerContent .contentBottom .info {
+      flex: 1;
+   }
+
+   /* ---------------------- Footer Styling ---------------------- */
+   .subFooterContent {
+      /* flex-direction: column; */
+      /* gap: 2rem; */
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0.5rem;
+      font-size: calc(0.5rem + 1vw);
+   }
+
+   /* Divider between designer and developer */
+   .subFooterContent .divide {
+      width: 0.2rem;
+      height: 4rem;
+      background: var(--secondaryColor);
+   }
+
+   .subFooterContent .authors {
+      gap: 0.5rem;
+   }
+
+   .subFooterContent .authors a {
+      color: var(--secondaryColor);
+      text-decoration: underline;
+   }
+}
+
+/******************************************
+/* Small Desktops
+/*******************************************/
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+   .container {
+      width: 96%;
+   }
+
+   .container2 {
+      width: 93%;
+   }
+
+   p {
+      font-size: calc(0.7rem + 1vw);
+   }
+
+   #hero {
+      padding: 3rem 0 0 0;
+      margin: 10rem 0 3rem 0;
+   }
+
+   .heroContent .contentTop {
+      padding-left: 4rem;
+   }
+
+   .heroContent .head {
+      font-size: calc(12rem + 3vw);
+      margin: 1rem 0;
+   }
+
+   .heroContent .accent {
+      font-size: calc(0.8rem + 3vw);
+   }
+
+   .heroContent .accent span {
+      font-size: calc(0.6rem + 2vw);
+   }
+
+   .heroContent .description {
+      width: 90%;
+   }
+
+   /* Buttons */
+   .heroButton {
+      margin-top: 4rem;
+      display: flex;
+   }
+
+   /* ---------------------- Swiper pagination ---------------------- */
+   /* ---------------------- Change Swiper pagination to left ---------------------- */
+   .heroContent .swiper-horizontal > .swiper-pagination-bullets,
+   .heroContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .heroContent .swiper-pagination-custom,
+   .heroContent .swiper-pagination-fraction {
+      left: var(--swiper-pagination-left, -87.5%);
+   }
+
+   /* pagination color */
+   .heroContent .swiper-pagination-bullet {
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+   }
+
+   /* ---------------------- Section: Popular Styling ---------------------- */
+   .popularContent .card img:hover,
+   .popularContent .card:hover img,
+   .amazingContent .grid-item:hover,
+   .amazingContent .grid-item span a:hover {
+      transform: scale(1.02);
+   }
+
+   .cardDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+   }
+
+   .foodName {
+      font-size: calc(0.8rem + 1.5vw);
+   }
+
+   .cardBtn {
+      padding: 1.4rem 0;
+      margin: auto;
+      width: 80%;
+   }
+
+   .cardBtn > * {
+      font-size: calc(0.4rem + 1vw);
+   }
+
+   /* ---------------------- Section: Selection Styling ---------------------- */
+   /* Selection Menu and Buttons */
+   .selectionContent .contentTop {
+      width: 100%;
+      height: 53rem;
+      flex: 1;
+      padding-left: 2rem;
+   }
+
+   .selectionContent .contentTop li div.btn {
+      padding: 1.2rem 3rem 1.2rem 1.2rem;
+      width: 20rem;
+      gap: 1.3rem;
+   }
+
+   .selectionContent .contentTop div.btn {
+      font-size: calc(0.9rem + 1vw);
+   }
+
+   .selectionContent .contentTop li div.btn img {
+      padding: 0.4rem;
+      width: 3.5rem;
+   }
+
+   /* Menu Banner */
+   .selectionContent .contentBottom {
+      width: 50%;
+   }
+
+   /* Slide background */
+   .selectionSwiper {
+      padding: 4rem 3rem 6rem 3rem;
+   }
+
+   /* Slide content */
+   .selectionSwiper .swiper-slide {
+      font-size: 8px;
+      padding: 0;
+      margin-right: 0;
+   }
+
+   /* Text and Button Content */
+   .selectionBox {
+      display: flex;
+   }
+
+   .selectionContent {
+      gap: 4rem;
+   }
+
+   .selectionContent .contentBottom .leaf {
+      top: -2%;
+      width: 5rem;
+   }
+
+   .selectionText {
+      gap: 4rem;
+   }
+
+   .selectionText h2 {
+      font-size: calc(3rem + 2.5vw);
+      line-height: 6rem;
+      margin-bottom: 2rem;
+   }
+
+   .selectionText .text {
+      width: 85%;
+   }
+
+   /* Button */
+   .selectionText a.btn {
+      padding: 1.5rem 4rem 1.5rem 2rem;
+      font-size: calc(1rem + 0.7vw);
+   }
+
+   /* Banner Iamge */
+   .image {
+      width: 45%;
+      bottom: -25%;
+      right: -4%;
+   }
+
+   /* ---------------------- Section: Amazing Styling ---------------------- */
+   #amazing {
+      padding: 5rem 0;
+   }
+
+   /* Heading */
+   .amazingContent .contentTop {
+      width: 60%;
+   }
+
+   .grid-item {
+      padding: 2rem;
+   }
+
+   .amazingbtn a {
+      padding: 1.6rem 3rem;
+   }
+
+   /* ---------------------- Section: mobile Styling ---------------------- */
+   .appContent {
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   /* Mobile app */
+   .appContent .contentTop {
+      flex: 1;
+      width: 52%;
+   }
+
+   .appContent .contentTop img {
+      width: 100%;
+   }
+
+   /* Text content */
+   .appContent .contentBottom {
+      flex: 1;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 50%;
+   }
+
+   /* Buttons */
+   .appContent .contentBottom .appBtn {
+      margin-top: 0;
+   }
+
+   .appContent .contentBottom .appBtn .btn {
+      padding: 1.2rem;
+   }
+
+   .appContent .contentBottom .appBtn,
+   .appContent .contentBottom .appBtn a {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+   }
+
+   .appContent .contentBottom .appBtn a {
+      background: var(--textColor);
+   }
+
+   /* ---------------------- Section: Testimonial Styling ---------------------- */
+   #testimonial {
+      padding: 5rem 0;
+   }
+
+   .testimonialContent .contentBottom .card {
+      margin: auto;
+      width: 100%;
+      padding: 4rem 2rem 6rem 2rem;
+   }
+
+   /* Slide image and text content */
+   .testimonialContent .testimonialBox {
+      gap: 1rem;
+   }
+
+   .testimonialContent .testimonialBox .contentTop img {
+      width: 70%;
+   }
+
+   /* Text content */
+   .testimonialContent .testimonialBox .contentBottom {
+      margin: 0;
+      padding: 0 1rem 5rem 1rem;
+      gap: 2rem;
+   }
+
+   /* Quote heading */
+   .testimonialContent .testimonialBox .contentBottom .lead i {
+      font-size: 3.5rem;
+   }
+
+   .testimonialContent .testimonialBox .contentBottom .lead h3 {
+      font-size: calc(1.3rem + 1.5vw);
+   }
+
+   /* Pagination Prev button */
+   .testimonialBox .swiper-button-next,
+   .swiper-button-prev {
+      top: var(--swiper-navigation-top-offset, 98%);
+      left: var(--swiper-navigation-left-offset, 64%);
+   }
+
+   /* Pagination Next button */
+   .testimonialBox .swiper-button-next,
+   .swiper-button-next {
+      top: var(--swiper-navigation-top-offset, 98%);
+      right: var(--swiper-navigation-right-offset, 2%);
+   }
+
+   /* ---------------------- Change Swiper pagination counter position ---------------------- */
+   .testimonialContent .swiper-horizontal > .swiper-pagination-bullets,
+   .testimonialContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .testimonialContent .swiper-pagination-custom,
+   .testimonialContent .swiper-pagination-fraction {
+      bottom: var(--swiper-pagination-bottom, -4%);
+      left: var(--swiper-pagination-left, 34.9%);
+   }
+
+   /* ---------------------- Subscribr Styling ---------------------- */
+   #subscribe {
+      width: 60%;
+   }
+
+   /* Background */
+   .subscribeContent .box {
+      padding: 2rem;
+      border-radius: 1.5rem;
+      gap: 2rem;
+      top: -2%;
+   }
+
+   .subscribeContent .box p {
+      padding: 0 9rem;
+   }
+
+   /* Subscribe Form */
+   .subscribeContent input[type="email"] {
+      padding: 1.5rem 4rem;
+      border-radius: 2.5rem;
+      width: 100%;
+   }
+
+   .subscribeContent input[type="submit"] {
+      right: 1%;
+   }
+
+   /* ---------------------- Footer Styling ---------------------- */
+   /* Other links */
+   .footerContent .contentBottom {
+      flex: 2;
+   }
+
+   /* ---------------------- Footer Styling ---------------------- */
+   .subFooterContent .authors {
+      gap: 1rem;
+   }
+}
+
+/******************************************
+/* Medium Desktops
+/*******************************************/
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+   .container {
+      width: 90%;
+   }
+
+   .container2 {
+      width: 95%;
+   }
+
+   .heroContent .contentTop {
+      padding-left: 4rem;
+   }
+
+   .heroContent .description {
+      width: 90%;
+   }
+
+   /* ---------------------- Swiper pagination ---------------------- */
+   /* ---------------------- Change Swiper pagination to left ---------------------- */
+   .heroContent .swiper-horizontal > .swiper-pagination-bullets,
+   .heroContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .heroContent .swiper-pagination-custom,
+   .heroContent .swiper-pagination-fraction {
+      left: var(--swiper-pagination-left, -80%);
+   }
+
+   /* pagination color */
+   .heroContent .swiper-pagination-bullet {
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+   }
+
+   /* ---------------------- Section: Selection Styling ---------------------- */
+   .selectionText .caption {
+      width: 60%;
+   }
+
+   .selectionText h2 {
+      font-size: calc(3rem + 2vw);
+      line-height: 6rem;
+      margin-bottom: 2rem;
+   }
+
+   .selectionText .text {
+      width: 85%;
+   }
+
+   /* Button */
+   .selectionText a.btn {
+      padding: 1.2rem 4rem 1.2rem 2rem;
+      font-size: calc(1rem + 0.81vw);
+   }
+
+   /* Banner Iamge */
+   .image {
+      width: 50%;
+      bottom: -33%;
+      right: -9%;
+   }
+
+   /* ---------------------- Section: Testimonial Styling ---------------------- */
+
+   /* Pagination P
+
+   /* ---------------------- Change Swiper pagination counter position ---------------------- */
+   .testimonialContent .swiper-horizontal > .swiper-pagination-bullets,
+   .testimonialContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .testimonialContent .swiper-pagination-custom,
+   .testimonialContent .swiper-pagination-fraction {
+      left: var(--swiper-pagination-left, 40%);
+   }
+
+   /* ---------------------- Subscribr Styling ---------------------- */
+   .subscribeContent .box p {
+      padding: 0 9rem;
+   }
+
+   /* Subscribe Form */
+   .subscribeContent input[type="email"] {
+      padding: 1.5rem 4rem;
+      border-radius: 2.5rem;
+      width: 80%;
+   }
+
+   .subscribeContent input[type="submit"] {
+      right: 11%;
+   }
+
+   /* ---------------------- Footer Styling ---------------------- */
+   /* Other links */
+   .footerContent .contentBottom {
+      flex: 2;
+   }
+}
+
+@media (min-width: 1440px) and (max-width: 1514px) {
+   .container {
+      width: 90%;
+   }
+
+   .container2 {
+      width: 95%;
+   }
+
+   .heroContent .contentTop {
+      padding-left: 4rem;
+   }
+
+   .heroContent .description {
+      width: 100%;
+   }
+
+   /* ---------------------- Section: Selection Styling ---------------------- */
+   /* Button */
+   .selectionText a.btn {
+      padding: 1.2rem 4rem 1.2rem 2rem;
+      font-size: calc(0.8rem + 0.51vw);
+   }
+
+   .amazingbtn a {
+      padding: 1.6rem 4rem;
+   }
+}
+
+/******************************************
+/* Large Desktops & above
+/*******************************************/
+@media screen and (min-width: 2000px) {
+
+   /* ---------------------- Swiper pagination ---------------------- */
+   /* ---------------------- Change Swiper pagination to left ---------------------- */
+   .heroContent .swiper-horizontal > .swiper-pagination-bullets,
+   .heroContent .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .heroContent .swiper-pagination-custom,
+   .heroContent .swiper-pagination-fraction {
+      left: var(--swiper-pagination-left, -73%);
+   }
+   
+}
+
+/* Mobile: Typically around 767px
+Tablet: Typically around 768px to 1023px
+Tablet landscape: Typically around 768px to 1024px width.
+Small Desktop: Typically around 1024px to 1279px
+Medium Desktop: Typically around 1280px to 1439px
+Large Desktop: Typically around 1440px and above */
+
