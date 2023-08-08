@@ -1,79 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-   --primaryColor: #ea0000;
-   --secondaryColor: #f4f5f5;
-   --textColor: #262f3a;
-   --textAccent: #d3d3d3;
-   --redAccent: #fde5e5;
-   --redShadow: 0 32px 54px #ea00006e;
-   --darkShadow: 0 32px 54px #262f3a94;
+  --primaryColor: #ea0000;
+  --secondaryColor: #f4f5f5;
+  --textColor: #262f3a;
+  --textAccent: #d3d3d3;
+  --redAccent: #fde5e5;
+  --redShadow: 0 32px 54px #ea00006e;
+  --darkShadow: 0 32px 54px #262f3a94;
 }
 
 /* ---------------------- Reset ---------------------- */
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-html {
-   font-size: 62.5%; /* 1rem = 10px */
+html,
+body {
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
 }
 
 /* Scroll Bar */
 html::-webkit-scrollbar {
-   width: 1rem;
-   background: #ea000034;
+  width: 1rem;
+  background: #ea000034;
 }
 
 html::-webkit-scrollbar-thumb {
-   background: var(--primaryColor);
-   border-radius: 0.2rem;
+  background: var(--primaryColor);
+  border-radius: 0.2rem;
 }
 
 /* ---------------------- General styling ---------------------- */
 body {
-   font-size: 1.6rem;
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   line-height: 1.5;
-   word-spacing: 0.05rem;
-   color: var(--textColor);
-   overflow-x: hidden;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  word-spacing: 0.05rem;
+  color: var(--textColor);
+  overflow-x: hidden;
 }
 
 /* ---------------------- Container ---------------------- */
 .container {
-   margin: auto;
-   width: 80%;
+  margin: auto;
+  width: 80%;
 }
 
 .container2 {
-   margin: auto;
-   width: 85%;
+  margin: auto;
+  width: 85%;
 }
 
 p {
-   font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 a {
-   text-decoration: none;
-   cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
-   margin: 0;
+  margin: 0;
 }
 
 li {
-   list-style: none;
+  list-style: none;
 }
 
 .highlight {
-   color: var(--primaryColor);
+  color: var(--primaryColor);
 }
 
 /* ---------------------- Button ---------------------- */
@@ -83,195 +85,195 @@ li {
 (0% 100%): Bottom-left corner */
 /* Styles for the slanted buttons */
 .btn {
-   text-decoration: none;
-   position: relative;
-   padding: 1.5rem 4.5rem;
-   color: #fff;
-   font-weight: 500;
-   display: inline-block;
-   letter-spacing: 0.09rem;
-   border-radius: 0.6rem;
-   transition: all 0.4s;
+  text-decoration: none;
+  position: relative;
+  padding: 1.5rem 4.5rem;
+  color: #fff;
+  font-weight: 500;
+  display: inline-block;
+  letter-spacing: 0.09rem;
+  border-radius: 0.6rem;
+  transition: all 0.4s;
 }
 
 /* Slanted on the right side */
 .right .btn,
 .selectionMenu div.btn.active {
-   background: var(--primaryColor);
-   clip-path: polygon(0% 0%, 102% 0%, 85% 100%, 0% 100%);
+  background: var(--primaryColor);
+  clip-path: polygon(0% 0%, 102% 0%, 85% 100%, 0% 100%);
 }
 
 .right .btn:hover {
-   transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .right:hover {
-   filter: drop-shadow(0 5px 62px #ea00003b);
+  filter: drop-shadow(0 5px 62px #ea00003b);
 }
 
 /* Slanted on the left side */
 .left .btn {
-   background: var(--textColor);
-   clip-path: polygon(15% 0%, 100% 0%, 100% 100%, -2% 100%);
+  background: var(--textColor);
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, -2% 100%);
 }
 
 .left .btn:hover {
-   transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .left:hover {
-   filter: drop-shadow(0 5px 62px #262f3a59);
+  filter: drop-shadow(0 5px 62px #262f3a59);
 }
 
 /* ---------------------- Header ---------------------- */
 header {
-   padding: 1.5rem 0;
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   background: #fff;
-   z-index: 1;
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
 }
 
 .headerContent {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ---------------------- navbar ---------------------- */
 .navbar {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .navbar a {
-   color: var(--textColor);
-   text-align: center;
-   padding: 0 0.8rem 1rem 0.8rem;
-   line-height: 2.4rem;
-   transition: 0.4s;
-   border-bottom: 0.2rem solid transparent;
+  color: var(--textColor);
+  text-align: center;
+  padding: 0 0.8rem 1rem 0.8rem;
+  line-height: 2.4rem;
+  transition: 0.4s;
+  border-bottom: 0.2rem solid transparent;
 }
 
 .navbar a.active {
-   border-bottom: 0.2rem solid var(--primaryColor);
+  border-bottom: 0.2rem solid var(--primaryColor);
 }
 
 .navbar a:hover {
-   border-bottom: 0.2rem solid var(--primaryColor);
-   transition: 0.4s;
+  border-bottom: 0.2rem solid var(--primaryColor);
+  transition: 0.4s;
 }
 
 /* ---------------------- user profile ---------------------- */
 .userProfile {
-   display: flex;
-   align-items: center;
-   gap: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .userProfile img {
-   flex: 1;
-   display: block;
+  flex: 1;
+  display: block;
 }
 
 .mobileProfile {
-   display: none;
+  display: none;
 }
 
 /* ---------------------- Mobile nav ---------------------- */
 .mobile-menu-icon {
-   display: none;
-   cursor: pointer;
-   z-index: 4;
-   transition: 0.4s;
+  display: none;
+  cursor: pointer;
+  z-index: 4;
+  transition: 0.4s;
 }
 
 /* Hamburger menu */
 .mobile-menu-icon div {
-   display: block;
-   background: var(--textColor);
-   height: 0.1849rem;
-   width: 1.8rem;
-   margin-bottom: 0.2rem;
-   border-radius: 0.5rem;
-   transition: 0.4s all;
+  display: block;
+  background: var(--textColor);
+  height: 0.1849rem;
+  width: 1.8rem;
+  margin-bottom: 0.2rem;
+  border-radius: 0.5rem;
+  transition: 0.4s all;
 }
 
 /* Hamburger menu animation on click*/
 .move .line1 {
-   transform: rotate(-45deg) translate(-0.03rem, 0.5rem);
+  transform: rotate(-45deg) translate(-0.03rem, 0.5rem);
 }
 
 .move .line2 {
-   opacity: 0;
+  opacity: 0;
 }
 
 .move .line3 {
-   transform: rotate(45deg) translate(-0.03rem, -0.5rem);
+  transform: rotate(45deg) translate(-0.03rem, -0.5rem);
 }
 
 /* ---------------------- Section: Hero Styling ---------------------- */
 #hero {
-   margin: 10rem 0 3rem 0;
-   padding: 3rem 0 0 3rem;
+  margin: 10rem 0 3rem 0;
+  padding: 3rem 0 0 3rem;
 }
 
 .heroContent {
-   position: relative;
-   /* padding: 0 8rem; */
+  position: relative;
+  /* padding: 0 8rem; */
 }
 
 /* ---------------------- Hero Swiper ---------------------- */
 .heroContent .swiper {
-   width: 100%;
-   height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper,
 .swiper-wrapper {
-   z-index: 0;
+  z-index: 0;
 }
 
 .heroContent .swiper-slide {
-   font-size: 18px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heroContent .swiper-slide img {
-   display: block;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .heroContent .flex {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* ---------------------- Swiper Top (text content) ---------------------- */
 .heroContent .contentTop {
-   flex: 1;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: space-between;
-   padding-left: 8.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  padding-left: 8.5rem;
 }
 
 .heroContent .headText {
-   position: relative;
+  position: relative;
 }
 
 .headText div {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .heroContent p.highlight,
@@ -279,64 +281,64 @@ header {
 .amazingContent .contentTop span,
 .appContent .contentBottom span,
 .testimonialContent .contentTop span {
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 /* Big Text */
 .heroContent .head {
-   font-size: 18rem;
-   font-weight: 800;
-   font-family: "Playfair Display", serif;
+  font-size: 18rem;
+  font-weight: 800;
+  font-family: 'Playfair Display', serif;
 }
 
 /* Price */
 .heroContent .accent {
-   display: inline-block;
-   color: var(--textAccent);
-   font-size: 5.5rem;
-   font-family: "Poppins", sans-serif;
-   line-height: 7rem;
-   transform: rotate(-0.25turn);
+  display: inline-block;
+  color: var(--textAccent);
+  font-size: 5.5rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 7rem;
+  transform: rotate(-0.25turn);
 }
 
 .heroContent .accent span {
-   font-size: 3.8rem;
+  font-size: 3.8rem;
 }
 
 /* food description */
 .heroContent .description {
-   width: 60%;
-   color: var(--textColor);
-   letter-spacing: 0.15rem;
-   line-height: 3.4rem;
+  width: 60%;
+  color: var(--textColor);
+  letter-spacing: 0.15rem;
+  line-height: 3.4rem;
 }
 
 /* Buttons */
 .heroButton {
-   margin-top: 8rem;
+  margin-top: 8rem;
 }
 
 /* Time table */
 .mealTime {
-   margin-top: 4rem;
-   display: flex;
-   gap: 3rem;
+  margin-top: 4rem;
+  display: flex;
+  gap: 3rem;
 }
 
 .mealTime p {
-   font-size: 2.4rem;
-   line-height: 3.4rem;
-   color: var(--textColor);
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: var(--textColor);
 }
 .mealTime span {
-   font-size: 2rem;
-   line-height: 3.4rem;
-   color: var(--textAccent);
+  font-size: 2rem;
+  line-height: 3.4rem;
+  color: var(--textAccent);
 }
 
 /* ---------------------- Swiper Bottom (Image content) ---------------------- */
 .heroContent .contentBottom {
-   height: 100%;
+  height: 100%;
 }
 
 /* ---------------------- Swiper pagination ---------------------- */
@@ -345,56 +347,51 @@ header {
 .heroContent .swiper-pagination-bullets.swiper-pagination-horizontal,
 .heroContent .swiper-pagination-custom,
 .heroContent .swiper-pagination-fraction {
-   left: var(--swiper-pagination-left, -74.8%);
-   right: var(--swiper-pagination-right, auto);
-   top: -10%;
-   width: 100%;
-   transform: rotate(0.25turn);
+  left: var(--swiper-pagination-left, -74.8%);
+  right: var(--swiper-pagination-right, auto);
+  top: -10%;
+  width: 100%;
+  transform: rotate(0.25turn);
 }
 
 /* pagination color */
 .heroContent .swiper-pagination-bullet {
-   margin: 0 20rem;
-   width: 2rem !important;
-   height: 2rem !important;
-   border-radius: 50% !important;
-   background-color: var(--redAccent) !important;
-   opacity: 1 !important;
+  margin: 0 20rem;
+  width: 2rem !important;
+  height: 2rem !important;
+  border-radius: 50% !important;
+  background-color: var(--redAccent) !important;
+  opacity: 1 !important;
 }
 
 /* Space between pagination */
-.heroContent
-   .swiper-horizontal
-   > .swiper-pagination-bullets
-   .swiper-pagination-bullet,
-.heroContent
-   .swiper-pagination-horizontal.swiper-pagination-bullets
-   .swiper-pagination-bullet {
-   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+.heroContent .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.heroContent .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
 }
 
 /* Active swiper pagination */
 .heroContent .swiper-pagination-bullet-active {
-   width: 2rem !important;
-   background: var(--primaryColor) !important;
+  width: 2rem !important;
+  background: var(--primaryColor) !important;
 }
 
 /* ---------------------- Section: Popular Styling ---------------------- */
 #popular {
-   padding: 10rem 0;
+  padding: 10rem 0;
 }
 
 .popularContent {
-   display: flex;
-   flex-direction: column;
-   gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .popularContent .contentTop {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Small top text */
@@ -403,7 +400,7 @@ header {
 .appContent .contentBottom span,
 .testimonialContent .contentTop span,
 .subscribeContent .box .heading span {
-   font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Heading text */
@@ -411,162 +408,162 @@ header {
 .amazingContent .contentTop h2,
 .appContent .contentBottom h2,
 .testimonialContent .contentTop h2 {
-   font-size: 4.8rem;
-   font-family: "Playfair Display", serif;
-   font-weight: 800;
-   line-height: 6.3rem;
+  font-size: 4.8rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  line-height: 6.3rem;
 }
 
 /* Divider */
 .popularContent .contentTop img {
-   width: 15rem;
-   margin-left: 4rem;
+  width: 15rem;
+  margin-left: 4rem;
 }
 
 .popularContent .contentBottom {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   /* justify-content: space-between; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 /* Meals */
 .popularContent .card {
-   text-align: center;
-   transition: 0.4s;
+  text-align: center;
+  transition: 0.4s;
 }
 
 .popularContent .card img,
 .amazingContent .grid-item,
 .amazingContent .grid-item span a {
-   transition: 0.4s;
+  transition: 0.4s;
 }
 .popularContent .card img:hover,
 .popularContent .card:hover img,
 .amazingContent .grid-item:hover,
 .amazingContent .grid-item span a:hover {
-   transform: scale(1.1);
-   transition: 0.4s;
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 
 .cardDetails {
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* Star icon */
 .stars .fa-duotone {
-   --fa-primary-color: var(--primaryColor);
-   --fa-secondary-color: var(--textAccent);
-   --fa-secondary-opacity: 1;
+  --fa-primary-color: var(--primaryColor);
+  --fa-secondary-color: var(--textAccent);
+  --fa-secondary-opacity: 1;
 }
 
 .stars .fa-solid {
-   color: var(--primaryColor);
+  color: var(--primaryColor);
 }
 
 .stars .fa-solid.empty {
-   color: var(--textAccent);
+  color: var(--textAccent);
 }
 
 .country {
-   line-height: 2.25rem;
-   font-size: 1.7rem;
+  line-height: 2.25rem;
+  font-size: 1.7rem;
 }
 
 .foodName {
-   font-size: 2.8rem;
-   line-height: 4.2rem;
+  font-size: 2.8rem;
+  line-height: 4.2rem;
 }
 
 .popularContent .card a {
-   margin-top: 2rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .cardBtn {
-   display: inline-block;
-   color: var(--secondaryColor);
-   background: var(--primaryColor);
-   padding: 2rem 4rem;
-   border-radius: 1.3rem;
-   transform: skew(-15deg);
-   transform: 0.4s;
+  display: inline-block;
+  color: var(--secondaryColor);
+  background: var(--primaryColor);
+  padding: 2rem 4rem;
+  border-radius: 1.3rem;
+  transform: skew(-15deg);
+  transform: 0.4s;
 }
 
 .cardBtn > * {
-   padding: 0;
-   margin: 0;
-   display: inline-block;
-   transform: skew(15deg);
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  transform: skew(15deg);
 }
 
 .cardBtn:hover {
-   box-shadow: 0 32px 64px #ea00006e;
-   transition: 0.4s;
+  box-shadow: 0 32px 64px #ea00006e;
+  transition: 0.4s;
 }
 
 /* ---------------------- Section: Selection Styling ---------------------- */
 #selection {
-   padding: 10rem 0;
+  padding: 10rem 0;
 }
 
 .selectionContent {
-   display: flex;
-   gap: 10rem;
+  display: flex;
+  gap: 10rem;
 }
 
 /* Selection Menu and Buttons */
 .selectionContent .contentTop {
-   width: 100%;
-   height: 53rem;
-   flex: 1;
-   padding-left: 5rem;
-   overflow: hidden;
-   overflow-y: auto;
+  width: 100%;
+  height: 53rem;
+  flex: 1;
+  padding-left: 5rem;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 /* Buttons */
 .selectionContent .contentTop div.btn {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 /* Button text */
 .selectionContent .contentTop ul,
 .selectionContent .contentTop div.btn {
-   display: flex;
-   align-items: center;
-   justify-content: flex-start;
-   font-size: 1.5rem;
-   color: var(--textColor);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  color: var(--textColor);
 }
 
 .selectionContent .contentTop ul {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   height: 100%;
-   align-items: flex-start;
-   gap: 4rem;
-   margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-right: 3rem;
 }
 
 .selectionContent .contentTop li div.btn {
-   padding: 1.5rem 7rem 1.5rem 1.5rem;
-   display: flex;
-   width: 23.7rem;
-   gap: 2rem;
-   align-items: center;
-   justify-content: flex-start;
-   clip-path: polygon(0% 0%, 102% 0%, 85% 100%, 0% 100%);
+  padding: 1.5rem 7rem 1.5rem 1.5rem;
+  display: flex;
+  width: 23.7rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+  clip-path: polygon(0% 0%, 102% 0%, 85% 100%, 0% 100%);
 }
 
 .selectionContent .contentTop li div.btn:hover {
-   background: var(--primaryColor);
+  background: var(--primaryColor);
 }
 
 /* Active and hover button */
@@ -574,61 +571,61 @@ header {
 .selectionContent .contentTop li div.btn:hover,
 .selectionContent .contentTop li.active,
 .selectionContent .contentTop li:hover {
-   color: var(--secondaryColor);
-   filter: drop-shadow(0 5px 22px #ea00003b);
+  color: var(--secondaryColor);
+  filter: drop-shadow(0 5px 22px #ea00003b);
 }
 
 /* Image in button */
 .selectionContent .contentTop li div.btn img {
-   padding: 0.8rem;
-   border-radius: 1rem;
-   object-fit: cover;
-   width: 5rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  width: 5rem;
 }
 
 .selectionContent .contentTop li div.btn.active img,
 .selectionContent .contentTop li div.btn:hover img {
-   background: var(--secondaryColor);
+  background: var(--secondaryColor);
 }
 
 /* Menu Scrollbar */
 .selectionContent .contentTop::-webkit-scrollbar {
-   width: 0.6rem;
-   border-radius: 0.5rem;
-   background: var(--secondaryColor);
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background: var(--secondaryColor);
 }
 
 .selectionContent .contentTop::-webkit-scrollbar-thumb {
-   background: var(--primaryColor);
-   border-radius: 0.5rem;
+  background: var(--primaryColor);
+  border-radius: 0.5rem;
 }
 
 /* Menu Banner */
 .selectionContent .contentBottom {
-   flex: 3;
-   width: 48%;
-   height: 46rem;
-   position: relative;
+  flex: 3;
+  width: 48%;
+  height: 46rem;
+  position: relative;
 }
 
 /* Slide background */
 .selectionSwiper {
-   background: var(--secondaryColor);
-   padding: 4rem 5rem 0 5rem;
-   border-radius: 4rem;
-   width: 100%;
+  background: var(--secondaryColor);
+  padding: 4rem 5rem 0 5rem;
+  border-radius: 4rem;
+  width: 100%;
 }
 
 /* Slide content */
 .selectionSwiper .swiper-slide {
-   font-size: 18px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   height: 100%;
-   padding: 0 5rem 5rem 0;
-   margin-right: 10rem;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 5rem 5rem 0;
+  margin-right: 10rem;
 }
 
 /* .selectionSwiper .swiper,
@@ -642,363 +639,363 @@ header {
 
 /* Text and Button Content */
 .selectionBox {
-   display: flex;
+  display: flex;
 }
 
 .selectionContent .contentBottom .leaf {
-   position: absolute;
-   top: -6%;
-   left: 50%;
-   z-index: 2;
+  position: absolute;
+  top: -6%;
+  left: 50%;
+  z-index: 2;
 }
 
 .selectionText {
-   flex: 1;
-   display: flex;
-   flex-direction: column;
-   gap: 3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .selectionText .caption {
-   display: flex;
-   align-items: center;
-   background: var(--textAccent);
-   justify-content: center;
-   gap: 2rem;
-   width: 40%;
-   border-radius: 6rem;
-   border: 1px solid var(--textColor);
-   padding: 1rem;
+  display: flex;
+  align-items: center;
+  background: var(--textAccent);
+  justify-content: center;
+  gap: 2rem;
+  width: 40%;
+  border-radius: 6rem;
+  border: 1px solid var(--textColor);
+  padding: 1rem;
 }
 
 .selectionText h2 {
-   width: 100%;
-   font-family: "Playfair Display", "serif";
-   font-size: 7rem;
-   font-weight: 800;
-   line-height: 9rem;
-   margin-bottom: 1.5rem;
+  width: 100%;
+  font-family: 'Playfair Display', 'serif';
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 9rem;
+  margin-bottom: 1.5rem;
 }
 
 .selectionText .text {
-   width: 55%;
-   font-size: 2rem;
-   line-height: 3.5rem;
-   color: var(--textColor);
+  width: 55%;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: var(--textColor);
 }
 
 /* Button */
 .selectionText span {
-   filter: drop-shadow(0 5px 22px #262f3a75);
-   transition: 0.4s;
-   display: inline-block;
+  filter: drop-shadow(0 5px 22px #262f3a75);
+  transition: 0.4s;
+  display: inline-block;
 }
 
 .selectionText a.btn {
-   display: inline-block;
-   padding: 2rem 7rem 2rem 3rem;
-   text-align: left;
-   background-color: var(--textColor);
-   clip-path: polygon(0% 0%, 102% 0%, 85% 100%, 0% 100%);
+  display: inline-block;
+  padding: 2rem 7rem 2rem 3rem;
+  text-align: left;
+  background-color: var(--textColor);
+  clip-path: polygon(0% 0%, 102% 0%, 85% 100%, 0% 100%);
 }
 
 .selectionText span:hover {
-   transform: translateY(-0.8rem);
-   transition: 0.4s;
+  transform: translateY(-0.8rem);
+  transition: 0.4s;
 }
 
 /* Banner Iamge */
 .image {
-   overflow-x: hidden;
-   position: absolute;
-   width: 60%;
-   bottom: -53%;
-   right: -12%;
+  overflow-x: hidden;
+  position: absolute;
+  width: 60%;
+  bottom: -53%;
+  right: -12%;
 }
 
 .image img {
-   width: 100%;
+  width: 100%;
 }
 
 /* Each Menu Banner  */
 .banner-item {
-   display: none;
+  display: none;
 }
 
 .banner-item.active {
-   display: block;
+  display: block;
 }
 
 /* Selection Menu Slider Pagination */
 .selectionContent .swiper-pagination-bullet {
-   width: 0.6rem !important;
-   height: 0.6rem !important;
-   border-radius: 0.32rem !important;
-   background-color: var(--textAccent) !important;
-   opacity: 1 !important;
+  width: 0.6rem !important;
+  height: 0.6rem !important;
+  border-radius: 0.32rem !important;
+  background-color: var(--textAccent) !important;
+  opacity: 1 !important;
 }
 
 .selectionContent .swiper-pagination-bullet-active {
-   width: 2.4rem !important;
-   background: var(--primaryColor) !important;
+  width: 2.4rem !important;
+  background: var(--primaryColor) !important;
 }
 
 /* ---------------------- Section: Amazing Styling ---------------------- */
 #amazing {
-   padding: 10rem 0;
+  padding: 10rem 0;
 }
 
 .amazingContent {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Heading */
 .amazingContent .contentTop {
-   margin-bottom: 8rem;
-   width: 43%;
-   text-align: center;
+  margin-bottom: 8rem;
+  width: 43%;
+  text-align: center;
 }
 
 /* Meal Cards */
 .grid {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   justify-content: space-between;
-   align-items: center;
-   gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
 }
 
 .grid-item {
-   box-shadow: 0 0.3rem 2rem 0.24rem #262f3a1e;
-   border-radius: 3rem;
-   padding: 4rem 5rem;
+  box-shadow: 0 0.3rem 2rem 0.24rem #262f3a1e;
+  border-radius: 3rem;
+  padding: 4rem 5rem;
 }
 
 .grid-item img {
-   display: block;
-   margin: auto;
+  display: block;
+  margin: auto;
 }
 
 .gridTitle {
-   font-weight: 500;
-   font-size: 2rem;
-   line-height: 3rem;
-   padding: 1rem 0;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3rem;
+  padding: 1rem 0;
 }
 
 .gridDescription {
-   font-size: 1.55rem;
-   line-height: 2.6rem;
-   line-height: -0.1rem;
+  font-size: 1.55rem;
+  line-height: 2.6rem;
+  line-height: -0.1rem;
 }
 
 /* Price and Buttons */
 .gridFooter {
-   display: flex;
-   justify-content: space-between;
-   margin-top: 2rem;
-   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: center;
 }
 
 .gridFooter p {
-   font-size: 2rem;
+  font-size: 2rem;
 }
 
 .gridFooter span {
-   display: flex;
-   gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .gridFooter a {
-   color: var(--secondaryColor);
-   padding: 0.6rem 0.9rem;
-   border-radius: 1rem;
+  color: var(--secondaryColor);
+  padding: 0.6rem 0.9rem;
+  border-radius: 1rem;
 }
 
 .red {
-   background: var(--primaryColor);
+  background: var(--primaryColor);
 }
 
 .dark {
-   background: var(--textColor);
+  background: var(--textColor);
 }
 
 /* See all menu Button */
 .amazingbtn {
-   margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .amazingbtn a {
-   padding: 2.5rem 4rem;
+  padding: 2.5rem 4rem;
 }
 
 /* ---------------------- Section: mobile Styling ---------------------- */
 #app {
-   padding: 8rem 0;
-   background: var(--secondaryColor);
-   color: var(--textColor);
+  padding: 8rem 0;
+  background: var(--secondaryColor);
+  color: var(--textColor);
 }
 
 .appContent {
-   display: flex;
-   margin: auto;
-   width: 70%;
-   /* gap: 25rem; */
-   align-items: center;
+  display: flex;
+  margin: auto;
+  width: 70%;
+  /* gap: 25rem; */
+  align-items: center;
 }
 
 /* Mobile app */
 .appContent .contentTop {
-   flex: 1;
-   width: 100%;
+  flex: 1;
+  width: 100%;
 }
 
 /* Text content */
 .appContent .contentBottom {
-   flex: 1;
-   padding-right: 4rem;
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
+  flex: 1;
+  padding-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* Buttons */
 .appContent .contentBottom .appBtn {
-   margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .appContent .contentBottom .appBtn,
 .appContent .contentBottom .appBtn a {
-   display: flex;
-   gap: 2rem;
-   align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .appContent .contentBottom .appBtn a {
-   background: var(--textColor);
+  background: var(--textColor);
 }
 
 /* Image within the buttons */
 .appContent .contentBottom .appBtn a img {
-   justify-content: center;
-   align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ---------------------- Section: Testimonial Styling ---------------------- */
 #testimonial {
-   padding: 10rem 0;
+  padding: 10rem 0;
 }
 
 .testimonialContent {
-   gap: 5rem;
+  gap: 5rem;
 }
 
 .testimonialContent,
 .testimonialContent .contentTop {
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Heading */
 .testimonialContent > .contentTop {
-   display: flex;
-   margin-bottom: 5rem;
+  display: flex;
+  margin-bottom: 5rem;
 }
 .testimonialContent .contentTop div {
-   position: relative;
+  position: relative;
 }
 
 /* divider */
 .testimonialContent .contentTop img.divider {
-   position: absolute;
-   width: 15rem;
-   right: 0;
+  position: absolute;
+  width: 15rem;
+  right: 0;
 }
 
 /* Slide background */
 .testimonialContent .contentBottom .card {
-   margin: auto;
-   width: 90%;
-   padding: 4rem;
-   border-radius: 5rem;
-   box-shadow: 0 0.3rem 2rem 0.24rem #262f3a1e;
+  margin: auto;
+  width: 90%;
+  padding: 4rem;
+  border-radius: 5rem;
+  box-shadow: 0 0.3rem 2rem 0.24rem #262f3a1e;
 }
 
 /* Slide image and text content */
 .testimonialContent .testimonialBox {
-   display: flex;
-   gap: 2rem;
-   align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 /* Slide image */
 .testimonialContent .testimonialBox .contentTop {
-   flex: 1;
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-   text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
 }
 
 /* Divider */
 .line {
-   width: 5px;
-   height: 30rem;
-   background: var(--primaryColor);
+  width: 5px;
+  height: 30rem;
+  background: var(--primaryColor);
 }
 
 /* Text content */
 .testimonialContent .testimonialBox .contentBottom {
-   flex: 1.3;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   gap: 7rem;
-   margin-left: 2rem;
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 7rem;
+  margin-left: 2rem;
 }
 
 /* Quote heading */
 .testimonialContent .testimonialBox .contentBottom .lead {
-   display: flex;
-   align-items: baseline;
-   gap: 2rem;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
 }
 
 .testimonialContent .testimonialBox .contentBottom .lead h3 {
-   font-size: 2.5rem;
-   font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 /* Pagination Prev button */
 .testimonialBox .swiper-button-next,
 .swiper-button-prev {
-   color: var(--primaryColor);
-   font-weight: 800;
-   position: absolute;
-   top: var(--swiper-navigation-top-offset, 93%);
-   left: var(--swiper-navigation-left-offset, 75%);
-   width: calc(var(--swiper-navigation-size) / 1 * 7);
-   height: 0.2rem;
+  color: var(--primaryColor);
+  font-weight: 800;
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 93%);
+  left: var(--swiper-navigation-left-offset, 75%);
+  width: calc(var(--swiper-navigation-size) / 1 * 7);
+  height: 0.2rem;
 }
 
 /* Pagination Next button */
 .testimonialBox .swiper-button-next,
 .swiper-button-next {
-   color: var(--primaryColor);
-   position: absolute;
-   font-weight: 800;
-   top: var(--swiper-navigation-top-offset, 93%);
-   width: calc(var(--swiper-navigation-size) / 14 * 27);
-   height: 0.2rem;
+  color: var(--primaryColor);
+  position: absolute;
+  font-weight: 800;
+  top: var(--swiper-navigation-top-offset, 93%);
+  width: calc(var(--swiper-navigation-size) / 14 * 27);
+  height: 0.2rem;
 }
 
 .testimonialBox .swiper-button-next:after,
 .testimonialBox .swiper-button-prev:after {
-   font-size: 2rem !important;
+  font-size: 2rem !important;
 }
 
 /* ---------------------- Change Swiper pagination counter position ---------------------- */
@@ -1006,184 +1003,184 @@ header {
 .testimonialContent .swiper-pagination-bullets.swiper-pagination-horizontal,
 .testimonialContent .swiper-pagination-custom,
 .testimonialContent .swiper-pagination-fraction {
-   bottom: var(--swiper-pagination-bottom, 2%);
-   left: var(--swiper-pagination-left, 39%);
-   right: -10%;
-   width: 100%;
-   color: var(--primaryColor);
-   font-family: "Playfair Display", serif;
-   font-size: 2.5rem;
+  bottom: var(--swiper-pagination-bottom, 2%);
+  left: var(--swiper-pagination-left, 39%);
+  right: -10%;
+  width: 100%;
+  color: var(--primaryColor);
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
 }
 
 /* Make current slide number bigger */
 .testimonialContent .swiper-pagination-fraction .swiper-pagination-current {
-   font-size: 5rem !important;
+  font-size: 5rem !important;
 }
 
 /* ---------------------- Subscribr Styling ---------------------- */
 #subscribe {
-   margin: 0 auto;
-   width: 50%;
-   padding: 5rem 0;
+  margin: 0 auto;
+  width: 50%;
+  padding: 5rem 0;
 }
 
 .subscribeContent {
-   position: relative;
+  position: relative;
 }
 
 /* Background */
 .subscribeContent .box {
-   background: #fff;
-   border: 0.1rem solid var(--primaryColor);
-   border-radius: 3rem;
-   padding: 3rem;
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-   text-align: center;
-   position: absolute;
-   top: -2%;
+  background: #fff;
+  border: 0.1rem solid var(--primaryColor);
+  border-radius: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  position: absolute;
+  top: -2%;
 }
 
 .subscribeContent .box .heading {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Divider */
 .subscribeContent .box .heading img {
-   padding-left: 15rem;
+  padding-left: 15rem;
 }
 
 .subscribeContent .box p {
-   text-align: center;
-   font-size: 1.5rem;
-   padding: 0 15rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 15rem;
 }
 
 /* Subscribe Form */
 .subscribeContent .formWrapper {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .subscribeContent input {
-   outline: none;
-   border: none;
+  outline: none;
+  border: none;
 }
 
-.subscribeContent input[type="email"] {
-   border: 0.1rem solid var(--primaryColor);
-   padding: 1.5rem 4rem;
-   border-radius: 2.5rem;
-   width: 60%;
+.subscribeContent input[type='email'] {
+  border: 0.1rem solid var(--primaryColor);
+  padding: 1.5rem 4rem;
+  border-radius: 2.5rem;
+  width: 60%;
 }
 
-.subscribeContent input[type="submit"] {
-   position: absolute;
-   right: 20.5%;
-   color: var(--secondaryColor);
-   background: var(--primaryColor);
-   padding: 1.2rem 2rem;
-   border-radius: 2rem;
-   cursor: pointer;
+.subscribeContent input[type='submit'] {
+  position: absolute;
+  right: 20.5%;
+  color: var(--secondaryColor);
+  background: var(--primaryColor);
+  padding: 1.2rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
 }
 
 /* ---------------------- Footer Styling ---------------------- */
 #mainFooter {
-   background: var(--textColor);
-   color: var(--secondaryColor);
-   margin-top: 10rem;
-   padding: 16rem 4rem 4rem 4rem;
+  background: var(--textColor);
+  color: var(--secondaryColor);
+  margin-top: 10rem;
+  padding: 16rem 4rem 4rem 4rem;
 }
 
 .footerContent {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Logo and social */
 .footerContent .contentTop {
-   flex: 1;
-   display: flex;
-   flex-direction: column;
-   gap: 5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .footerContent a {
-   color: var(--secondaryColor);
-   transition: all 0.4s;
+  color: var(--secondaryColor);
+  transition: all 0.4s;
 }
 
 .footerContent a:hover {
-   color: var(--primaryColor);
-   transition: all 0.4s;
+  color: var(--primaryColor);
+  transition: all 0.4s;
 }
 
 .footerContent .social i {
-   margin-right: 3rem;
+  margin-right: 3rem;
 }
 
 /* Other links */
 .footerContent .contentBottom {
-   flex: 1.5;
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
+  flex: 1.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footerContent .contentBottom > *,
 .footerContent .contentBottom > * ul {
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .footerContent .contentBottom > * p {
-   font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 .footerContent .contentBottom > * li {
-   display: flex;
-   gap: 2rem;
-   align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 /* ---------------------- Footer Styling ---------------------- */
 #subFooter {
-   background: var(--textColor);
-   color: var(--secondaryColor);
+  background: var(--textColor);
+  color: var(--secondaryColor);
 }
 
 .subFooterContent {
-   border-top: 2px solid var(--textAccent);
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 2rem 3rem;
-   /* font-size: 1rem; */
-   font-size: 1.5rem;
+  border-top: 2px solid var(--textAccent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  /* font-size: 1rem; */
+  font-size: 1.5rem;
 }
 
 /* Divider between designer and developer */
 .subFooterContent .divide {
-   width: 0.2rem;
-   height: 4rem;
-   background: var(--secondaryColor);
+  width: 0.2rem;
+  height: 4rem;
+  background: var(--secondaryColor);
 }
 
 .subFooterContent .authors {
-   display: flex;
-   align-items: center;
-   gap: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
 }
 
 .subFooterContent .authors a {
-   color: var(--secondaryColor);
-   text-decoration: underline;
+  color: var(--secondaryColor);
+  text-decoration: underline;
 }
