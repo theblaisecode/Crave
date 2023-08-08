@@ -4,6 +4,8 @@
 Experience a culinary symphony of flavor at Crave, where each dish is an artful masterpiece crafted with passion and precision. <br>From the first bite to the last, our menu is a symphony of taste sensations that will tantalize your taste buds and leave you craving for more.<br>
 From the beloved Nigerian 5-star delicacy, [**`Beans and Dodo`**](https://theblaisecode.github.io/Crave/index.html#), to the aromatic and flavorful Indian[**` Rice and Curry`**](https://theblaisecode.github.io/Crave/index.html#) Delicacy, we've got what it takes to make your stomach satisfied.
 
+Live Project - https://theblaisecode.github.io/Crave/
+
 ## Demo
 ### Desktop view
 <video src="https://github.com/Ehiane/Crave/assets/79903725/3e78df8a-e1a8-4835-a601-ce09e38e2135" controls autoplay width="100">
