@@ -1,8 +1,7 @@
 # Crave Restaurant Website
 A restaurant website (fully responsive on all screen sizes).
 
-Live Project - [https://theblaisecode.github.io/Crave/](https://theblaisecode.github.io/Crave/) <br/>
-Live Project (Netlify) - [https://crave-restaurant-by-blaise.netlify.app/](https://crave-restaurant-by-blaise.netlify.app/)
+Live Project - [https://theblaisecode.github.io/Crave/](https://theblaisecode.github.io/Crave/)
 
 # The Website
 ![crave](https://github.com/theblaisecode/Crave/assets/89015653/1ceb460b-e68e-4bbc-8cec-c63fc39ab92c)
