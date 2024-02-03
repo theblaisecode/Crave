@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --primaryColor: #ea0000;
@@ -38,7 +38,7 @@ html::-webkit-scrollbar-thumb {
 /* ---------------------- General styling ---------------------- */
 body {
   font-size: 1.6rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   word-spacing: 0.05rem;
@@ -217,7 +217,8 @@ header {
 }
 
 /* ---------------------- Section: Hero Styling ---------------------- */
-#hero {
+#hero,
+#about {
   margin: 10rem 0 3rem 0;
   padding: 3rem 0 0 3rem;
 }
@@ -280,7 +281,13 @@ header {
 .popularContent .contentTop span,
 .amazingContent .contentTop span,
 .appContent .contentBottom span,
-.testimonialContent .contentTop span {
+.testimonialContent .contentTop span,
+.awardContent .contentTop span,
+.storyContent .contentTop span,
+.hoursContent .contentTop span,
+.howContent .contentBottom span,
+.deliverContent .contentTop span,
+.specialContent .contentTop .head span {
   text-transform: uppercase;
 }
 
@@ -288,7 +295,7 @@ header {
 .heroContent .head {
   font-size: 18rem;
   font-weight: 800;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 /* Price */
@@ -296,7 +303,7 @@ header {
   display: inline-block;
   color: var(--textAccent);
   font-size: 5.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 7rem;
   transform: rotate(-0.25turn);
 }
@@ -306,7 +313,14 @@ header {
 }
 
 /* food description */
-.heroContent .description {
+.heroContent .description,
+.aboutContent .contentTop .description,
+.storyContent .contentTop .description,
+.awardContent .contentBottom .description,
+.formContent .description,
+.howContent .description,
+.deliverContent .description,
+.specialContent .description {
   width: 60%;
   color: var(--textColor);
   letter-spacing: 0.15rem;
@@ -365,8 +379,13 @@ header {
 }
 
 /* Space between pagination */
-.heroContent .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.heroContent .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.heroContent
+  .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+.heroContent
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
 }
 
@@ -381,13 +400,18 @@ header {
   padding: 10rem 0;
 }
 
-.popularContent {
+.popularContent,
+.awardContent,
+.hoursContent {
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
 
-.popularContent .contentTop {
+.popularContent .contentTop,
+.awardContent .contentTop,
+.hoursContent .contentTop,
+.specialContent .contentTop .head {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -399,7 +423,13 @@ header {
 .amazingContent .contentTop span,
 .appContent .contentBottom span,
 .testimonialContent .contentTop span,
-.subscribeContent .box .heading span {
+.subscribeContent .box .heading span,
+.awardContent .contentTop span,
+.storyContent .contentTop span,
+.hoursContent .contentTop span,
+.howContent .contentBottom span,
+.deliverContent .contentTop span,
+.specialContent .contentTop .head span {
   font-size: 2rem;
 }
 
@@ -407,9 +437,15 @@ header {
 .popularContent .contentTop h2,
 .amazingContent .contentTop h2,
 .appContent .contentBottom h2,
-.testimonialContent .contentTop h2 {
+.testimonialContent .contentTop h2,
+.awardContent .contentTop h2,
+.storyContent .contentTop h2,
+.hoursContent .contentTop h2,
+.howContent .contentBottom h2,
+.deliverContent .contentTop h2,
+.specialContent .contentTop .head h2 {
   font-size: 4.8rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 800;
   line-height: 6.3rem;
 }
@@ -512,7 +548,8 @@ header {
   padding: 10rem 0;
 }
 
-.selectionContent {
+.selectionContent,
+.selection2Content {
   display: flex;
   gap: 10rem;
 }
@@ -534,6 +571,7 @@ header {
 
 /* Button text */
 .selectionContent .contentTop ul,
+.selection2Content .contentTop ul,
 .selectionContent .contentTop div.btn {
   display: flex;
   align-items: center;
@@ -576,7 +614,8 @@ header {
 }
 
 /* Image in button */
-.selectionContent .contentTop li div.btn img {
+.selectionContent .contentTop li div.btn img,
+.selection2Content .contentTop li div.btn img {
   padding: 0.8rem;
   border-radius: 1rem;
   object-fit: cover;
@@ -609,7 +648,8 @@ header {
 }
 
 /* Slide background */
-.selectionSwiper {
+.selectionSwiper,
+.selection2Swiper {
   background: var(--secondaryColor);
   padding: 4rem 5rem 0 5rem;
   border-radius: 4rem;
@@ -617,7 +657,8 @@ header {
 }
 
 /* Slide content */
-.selectionSwiper .swiper-slide {
+.selectionSwiper .swiper-slide,
+.selection2Swiper .swiper-slide {
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -668,9 +709,10 @@ header {
   padding: 1rem;
 }
 
-.selectionText h2 {
+.selectionText h2,
+.tableContent .headText h2 {
   width: 100%;
-  font-family: 'Playfair Display', 'serif';
+  font-family: "Playfair Display", "serif";
   font-size: 7rem;
   font-weight: 800;
   line-height: 9rem;
@@ -685,7 +727,7 @@ header {
 }
 
 /* Button */
-.selectionText span {
+#selection .selectionText span {
   filter: drop-shadow(0 5px 22px #262f3a75);
   transition: 0.4s;
   display: inline-block;
@@ -705,7 +747,7 @@ header {
 }
 
 /* Banner Iamge */
-.image {
+#selection .image {
   overflow-x: hidden;
   position: absolute;
   width: 60%;
@@ -833,7 +875,8 @@ header {
 }
 
 /* ---------------------- Section: mobile Styling ---------------------- */
-#app {
+#app,
+#hours {
   padding: 8rem 0;
   background: var(--secondaryColor);
   color: var(--textColor);
@@ -1008,7 +1051,7 @@ header {
   right: -10%;
   width: 100%;
   color: var(--primaryColor);
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.5rem;
 }
 
@@ -1073,14 +1116,14 @@ header {
   border: none;
 }
 
-.subscribeContent input[type='email'] {
+.subscribeContent input[type="email"] {
   border: 0.1rem solid var(--primaryColor);
   padding: 1.5rem 4rem;
   border-radius: 2.5rem;
   width: 60%;
 }
 
-.subscribeContent input[type='submit'] {
+.subscribeContent input[type="submit"] {
   position: absolute;
   right: 20.5%;
   color: var(--secondaryColor);
@@ -1184,3 +1227,581 @@ header {
   color: var(--secondaryColor);
   text-decoration: underline;
 }
+
+/* ---------------------- Section: About Page Styling ---------------------- */
+#award {
+  padding: 0;
+}
+
+#about .aboutContent {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.aboutContent .contentTop {
+  flex: 2;
+}
+
+.aboutContent .contentTop .headText h2 {
+  font-size: 10rem;
+  font-weight: 800;
+  font-family: "Playfair Display", serif;
+  line-height: 11rem;
+  margin-bottom: 4rem;
+}
+
+.aboutContent .contentTop .headText span {
+  /* display: block; */
+}
+
+.aboutContent .contentTop .description,
+.formContent .description {
+  width: 100%;
+}
+
+.aboutContent .contentBottom {
+  flex: 1;
+  width: 100%;
+}
+
+.aboutContent .contentBottom img {
+  width: 800px;
+}
+
+/* ---------------------- Section: Award Styling ---------------------- */
+#story {
+  padding: 10rem 0;
+}
+
+.storyContent {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5rem;
+}
+
+.storyContent .contentTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ---------------------- Section: Story Styling ---------------------- */
+.storyContent {
+  gap: 5rem;
+}
+.storyContent .contentTop {
+  flex: 1.8;
+}
+.storyContent .contentBottom {
+  flex: 1.3;
+}
+
+.storyContent .contentTop .description {
+  width: 80%;
+  margin-top: 6rem;
+}
+
+.storyContent .contentBottom img {
+  width: 100%;
+}
+
+/* ---------------------- Section: Award Styling ---------------------- */
+#award {
+  padding: 0 10rem 0 0;
+}
+
+.awardContent .contentBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.awardContent .contentBottom .description,
+.specialContent .description {
+  width: 60%;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.awardContent,
+.awardContent .contentBottom .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awardContent .contentBottom .images {
+  gap: 9rem;
+}
+
+.awardContent .contentBottom img {
+  width: 10%;
+}
+
+/* ---------------------- Section: Client Styling ---------------------- */
+#client {
+  color: var(--secondaryColor);
+  background: url("/img/aboutBanner.jpg") center center/cover;
+}
+
+.clientContent {
+  display: flex;
+  padding: 10rem 0;
+  align-items: center;
+  gap: 12rem;
+}
+
+.clientContent .contentTop h2 {
+  font-size: 3rem;
+}
+
+.clientContent .contentBottom {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: center;
+}
+
+.clientContent .contentBottom img {
+  width: 28%;
+}
+
+/* ---------------------- Section: Hours Styling ---------------------- */
+#hours {
+  margin-top: 10rem;
+}
+
+.hoursContent {
+  margin: auto;
+  width: 70%;
+  /* gap: 25rem; */
+  align-items: center;
+}
+
+.hoursContent .contentBottom,
+.hoursContent .textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.hoursContent .textContent {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hoursContent .contentBottom ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 9rem;
+}
+
+.hoursContent .contentBottom ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--textColor);
+  letter-spacing: 0.15rem;
+  line-height: 3rem;
+}
+
+.hoursContent .contentBottom ul li i {
+  color: var(--primaryColor);
+  font-size: 3rem;
+  background: var(--redAccent);
+  padding: 2rem;
+  border-radius: 10rem;
+  margin-bottom: 2rem;
+}
+
+.hoursContent .contentBottom ul li i,
+.hoursContent .contentBottom ul li span {
+  display: block;
+}
+
+.hoursContent .contentBottom .time ul {
+  gap: 12rem;
+}
+
+.hoursContent .contentBottom .imageContent {
+  margin: auto;
+  width: 90%;
+  padding: 0 5rem;
+  max-width: 1200px;
+}
+
+.hoursContent.contentBottom .imageContent .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.hoursContent .contentBottom .imageContent img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Pagination Prev button */
+.myImageSwiper .swiper-button-next,
+.myImageSwiper .swiper-button-prev {
+  color: var(--primaryColor);
+  font-weight: 800;
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 55%);
+  left: var(--swiper-navigation-left-offset, -13%);
+  width: calc(var(--swiper-navigation-size) / 1 * 7);
+  height: 0.2rem;
+}
+
+/* Pagination Next button */
+.myImageSwiper .swiper-button-next,
+.myImageSwiper .swiper-button-next {
+  color: var(--primaryColor);
+  position: absolute;
+  font-weight: 800;
+  top: var(--swiper-navigation-top-offset, 55%);
+  left: var(--swiper-navigation-left-offset, 95%);
+  width: calc(var(--swiper-navigation-size) / 14 * 27);
+  height: 0.2rem;
+}
+
+.myImageSwiper .swiper-button-next:after,
+.myImageSwiper .swiper-button-prev:after {
+  font-size: 2rem !important;
+}
+
+/* ---------------------- Section: About footer Styling ---------------------- */
+#aboutFooter {
+  background: var(--textColor);
+  color: var(--secondaryColor);
+  margin-top: 0;
+  padding: 16rem 4rem 4rem 4rem;
+}
+
+/* ---------------------- Location Page Styling ---------------------- */
+#table {
+  margin: 10rem 0;
+}
+
+.tableContent,
+.howContent,
+.deliverContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+}
+
+.tableContent .contentTop,
+.howContent .contentTop,
+.deliverContent .contentTop {
+  flex: 1;
+}
+
+.tableContent .contentBottom,
+.howContent .contentBottom,
+.deliverContent .contentBottom {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tableContent .contentBottom img,
+.howContent .contentTop img {
+  width: 100%;
+}
+
+/* ---------------------- Form Styling ---------------------- */
+#form {
+  margin-top: 2rem;
+}
+
+#form .senderInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+#form input,
+#form textarea,
+#form select {
+  border: none;
+  border-bottom: 0.2rem solid var(--primaryColor);
+  outline: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--textColor);
+  border-radius: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#form input::placeholder,
+#form textarea::placeholder,
+#form select,
+#form select option {
+  color: var(--textColor);
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#form textarea {
+  width: 100%;
+  margin: 2rem 0;
+  height: 10rem;
+  resize: none;
+}
+
+#form select {
+  cursor: pointer;
+}
+
+#form select option:checked {
+  background: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+#form .formButton input {
+  color: var(--secondaryColor);
+  border-bottom: none;
+  padding-right: 5rem;
+  cursor: pointer;
+  padding-left: 4rem;
+}
+
+/* ---------------------- How Styling ---------------------- */
+#how {
+  margin-bottom: 10rem;
+}
+
+.howContent .contentBottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.howContent .description,
+.deliverContent .description {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+/* ---------------------- Deliver Styling ---------------------- */
+#deliver {
+  margin-bottom: 15rem;
+}
+.deliverContent .contentBottom img {
+  width: 120%;
+}
+
+/* ---------------------- Our Special Page Styling ---------------------- */
+#special {
+  margin: 10rem 0;
+}
+
+.selection2Content {
+  flex-direction: column;
+}
+
+.selection2Content .contentTop .head {
+  margin-bottom: 2rem;
+}
+
+.selection2Content .contentTop li {
+  cursor: pointer;
+}
+
+.selection2Content .contentTop li div.btn img {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.selection2Content .contentTop li div.btn img {
+  width: 40%;
+}
+
+.selection2Content .contentTop li div {
+  display: flex;
+  flex-direction: column;
+  color: var(--textColor);
+  justify-content: center;
+  align-items: center;
+}
+
+.selection2Content .contentTop li div.active {
+  color: var(--primaryColor);
+}
+
+.selection2Item .active {
+  border-bottom: 0.25rem solid var(--primaryColor);
+}
+
+.selection2Content {
+  gap: 5rem;
+}
+.selection2Content .contentBottom .banner-item2 {
+  display: flex;
+  gap: 2rem;
+}
+
+.selection2Content .contentBottom .image {
+  background: var(--redAccent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  padding: 1rem;
+  width: 30%;
+}
+.selection2Content .contentBottom .image img {
+  width: 100%;
+}
+.selection2Content .selection2Swiper {
+  width: 70%;
+  padding: 3rem;
+}
+
+#selection2 .selection2Swiper .swiper-slide,
+#indianMenu .selection2Swiper .swiper-slide,
+#specialMenu .selection2Swiper .swiper-slide {
+  padding: 0;
+  margin-right: 3rem;
+}
+
+#selection2 .contentBottom .banner-item2,
+#indianMenu .contentBottom .banner-item2,
+#specialMenu .contentBottom .banner-item2 {
+  display: none;
+}
+
+#selection2 .contentBottom .banner-item2.active {
+  display: flex;
+}
+
+#selection2 .contentBottom .selectionText .selectionGrid,
+#indianMenu .contentBottom .selectionText .selectionGrid,
+#specialMenu .contentBottom .selectionText .selectionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+#selection2 .contentBottom .selectionText .item,
+#indianMenu .contentBottom .selectionText .item,
+#specialMenu .contentBottom .selectionText .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#selection2 .contentBottom .selectionText .item .tabDot::before,
+#indianMenu .contentBottom .selectionText .item .tabDot::before,
+#specialMenu .contentBottom .selectionText .item .tabDot::before {
+  content: "............";
+}
+
+#indianMenu .contentBottom .banner-item2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#specialMenu .contentBottom .banner-item2 {
+  display: flex;
+}
+
+.spacing {
+  margin-bottom: 3rem;
+}
+
+.menuTable {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------- Chef Page Styling ---------------------- */
+.specialContent .description {
+  width: 85%;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.chefGrid {
+  display: grid;
+  gap: 10rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem auto;
+  width: 80%;
+}
+
+.chefGrid .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.chefGrid .card img {
+  width: 100%;
+}
+
+.chefGrid .card .chefBox {
+  background: var(--redAccent);
+  width: 100%;
+  padding: 2rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.chefGrid .card .chefBox .chefName {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#chefBanner {
+  background: url("/img/chefbanner.png") center bottom/cover;
+}
+
+.chefContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondaryColor);
+  padding: 8rem;
+}
+
+.chefContent h2 {
+  font-size: 9rem;
+  color: var(--secondaryColor);
+}
+
+.chefContent span {
+  background: var(--primaryColor);
+  display: inline-block;
+  padding: 1.5rem 6rem;
+  border-radius: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* #selection2 .contentBottom .selectionText .item:hover {
+  filter: drop-shadow(0 5px 22px #262f3a75);
+  transition: 0.4s;
+  display: inline-block;
+} */
