@@ -1,10 +1,10 @@
-# 🔗 ![logo](https://github.com/Ehiane/Crave/assets/79903725/2300d011-96e0-474f-8ec3-7098024449e7) [Crave](https://theblaisecode.github.io/Crave/index.html) - A fully responsive restaurant design
+# 🔗 ![logo](https://github.com/Ehiane/Crave/assets/79903725/2300d011-96e0-474f-8ec3-7098024449e7) [Crave](https://crave-restaurant-by-blaise.netlify.app/) - A fully responsive restaurant design
 
 ## Introduction
 Experience a culinary symphony of flavor at Crave, where each dish is an artful masterpiece crafted with passion and precision. <br>From the first bite to the last, our menu is a symphony of taste sensations that will tantalize your taste buds and leave you craving for more.<br>
-From the beloved Nigerian 5-star delicacy, [**`Beans and Dodo`**](https://theblaisecode.github.io/Crave/index.html#), to the aromatic and flavorful Indian[**` Rice and Curry`**](https://theblaisecode.github.io/Crave/index.html#) Delicacy, we've got what it takes to make your stomach satisfied.
+From the beloved Nigerian 5-star delicacy, [**`Beans and Dodo`**](https://crave-restaurant-by-blaise.netlify.app/), to the aromatic and flavorful Indian[**` Rice and Curry`**](https://crave-restaurant-by-blaise.netlify.app/) Delicacy, we've got what it takes to make your stomach satisfied.
 
-Live Project - https://theblaisecode.github.io/Crave/
+Live Project - https://crave-restaurant-by-blaise.netlify.app/
 
 ## Demo
 ### Desktop view
@@ -28,7 +28,7 @@ https://github.com/Ehiane/Crave/assets/79903725/913c91be-e055-4bee-8781-755bf884
 |     HTML         |   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" height="30" width="30" style="margin-right: 10px;" /></a>       |
 |    CSS           |    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" height="30" width="30" style="margin-right: 10px;" /></a>      |
 |    JAVASCRIPT    |    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" height="30" width="30" style="margin-right: 10px;" /></a>    |
-|    Swipper JS    |     <a href="https://swiperjs.com/" target="_blank"><img align="center" src="https://github.com/Ehiane/Crave/assets/79903725/16596509-2f7f-4560-ac9b-b0e85ac7a1fc" alt="Swiper.js" height="30" width="30" style="margin-right: 10px;" /></a>   |
+|    Swiper JS    |     <a href="https://swiperjs.com/" target="_blank"><img align="center" src="https://github.com/Ehiane/Crave/assets/79903725/16596509-2f7f-4560-ac9b-b0e85ac7a1fc" alt="Swiper.js" height="30" width="30" style="margin-right: 10px;" /></a>   |
 
 
 ## Authors
