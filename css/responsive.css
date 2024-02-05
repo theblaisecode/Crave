@@ -1531,6 +1531,7 @@
 
   .selection2Content .selection2Swiper {
     padding: 3rem 2rem;
+    width: 100%;
   }
 
   .selection2Content .contentBottom .image {
