@@ -676,6 +676,12 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .formContent #form input[type="time"],
+  .formContent #form input[type="date"] {
+    display: block;
+    width: 100%;
+  }
+
   /* ---------------------- How Styling ---------------------- */
   #how {
     margin-bottom: 10rem;
@@ -2356,6 +2362,7 @@
   }
 
   .selection2Content .selection2Swiper {
+    width: 100%;
     padding: 3rem 2rem;
   }
 
@@ -2883,6 +2890,7 @@
   }
 
   .selection2Content .selection2Swiper {
+    width: 100%;
     padding: 3rem 2rem;
   }
 
