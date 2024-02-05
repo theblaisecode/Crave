@@ -1575,6 +1575,12 @@ header {
   padding-left: 4rem;
 }
 
+.formContent #form input[type="time"],
+.formContent #form input[type="date"] {
+  display: block;
+  width: 100%;
+}
+
 /* ---------------------- How Styling ---------------------- */
 #how {
   margin-bottom: 10rem;
