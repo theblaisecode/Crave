@@ -696,7 +696,7 @@
   .howContent .headText,
   .deliverContent .headText,
   .specialContent .head div {
-    /* text-align: center; */
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -747,6 +747,7 @@
   }
 
   .selection2Content .selection2Swiper {
+    width: 100%;
     padding: 3rem 2rem;
   }
 
@@ -812,7 +813,7 @@
   }
 
   .chefContent {
-    padding: 5rem 2rem;
+    padding: 5rem .5rem;
   }
 
   .chefContent h2 {
