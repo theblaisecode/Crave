@@ -1344,7 +1344,7 @@ header {
 /* ---------------------- Section: Client Styling ---------------------- */
 #client {
   color: var(--secondaryColor);
-  background: url("/img/aboutBanner.jpg") center center/cover;
+  background: url("../img/aboutBanner.jpg") center center/cover;
 }
 
 .clientContent {
@@ -1780,7 +1780,7 @@ header {
 }
 
 #chefBanner {
-  background: url("/img/chefbanner.png") center bottom/cover;
+  background: URL("../img/chefbanner.png") center bottom/cover;
 }
 
 .chefContent {
